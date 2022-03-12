@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*wildcard */
+* {
+  box-sizing: border-box; /* garder mesure de box*/
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+margin: 0;
+}
+
+
+                               /* NAVBAR */
+
+/*nav*/
+nav {
+  display: flex;
+  border: 1px solid; /* temporaire */
+  align-items: center; /* pour centrer hauteur  */
+  justify-content: flex-end; /* mettre tout a droite */
+  flex-wrap: wrap; /* resonsive des lignes  */
+}
+
+/* id : Logo */
+nav .logo {
+  display: flex;
+  padding: 0 2% ; /* padding gauche droite */
+  margin-right: auto; /* prendre toute la marge a droite automatiquement */
+}
+
+/*div block des link nav*/
+nav .nav-block {
+  display: flex; /* parent des medias */
+}
+
+/* Class dans nav pour A*/
+nav .nav-link {
+  font-weight: bold;
+  color: inherit; /* couleur du css hérité*/
+  text-decoration: none; /* sans décoration autre que celle du style*/
+  padding: 40px; /* padding global pour garder la box */
+  border-top: 4px solid transparent; /* pour empêcher déplacement texte hover*/ 
+}
+
+nav .nav-link:hover {
+  border-top: 4px solid #0065FC; /* ligne colour hover */
+  color: #0065FC; /* couleur en hover text */
+}
+
+
+
+
+
+                               /* MEDIA RESPONSIVE */
+  /* ordinateurs */
+@media only screen and (min-width: 992px) {
+  nav .nav-block {
+    border: 1px solid green;
+  }
+  nav .logo2 {
+    display: none;
+  }
+}
+
+  /* Tablette*/
+@media only screen and (max-width: 992px) {
+  nav .nav-block {
+    border: 1px solid red;
+  }
+  nav .logo2 { /*cache logo 2*/
+    display: none;
+  }
+}
+
+
+
+  /* Smartphone */
+@media only screen and (max-width: 768px) {
+  nav .nav-block {
+    border: 1px solid rgb(255, 0, 242);
+  }
+
+  nav .logo { /*cache logo 1*/
+    display: none;
+}
+  nav .logo2 {  /*affiche logo 2*/
+    display: flex;
+    width: auto;
+    margin: auto;
+}
+  nav .nav-block {
+    width: 100%;
+    text-align:center;
+}
+  nav .nav-link {
+    width: 50%;
+    justify-content: center;
+    border-bottom: 4px solid #F2F2F2; /*barre grise*/
+}
+  nav .nav-link:hover {
+    border-top-color: transparent; /*cacher border du haut*/
+    border-bottom-color:#0065FC ; /*changer couleur de la border grise en bleu*/
+}
+}
+
+
