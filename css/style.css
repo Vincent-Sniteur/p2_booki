@@ -101,6 +101,7 @@ main .search-button {
 
 main .search-button:hover {
   opacity: 1;
+  transform: scale(1.03);
 }
 
 
@@ -114,27 +115,32 @@ main .filter-title {
   font-weight: bold;
 }
 main .filter-list {
-  align-items: center; /* pour centrer hauteur  */
-  flex-wrap: wrap; /* resonsive des lignes  */
+  align-items: center;
+  flex-wrap: wrap;
   display: flex;
   gap: 20px;
 }
 main .filter-display {
-  border: 3px solid #F2F2F2;
+  border: 3px solid #d9d9d9;
   margin-left: 10px;
   display: flex;
-  border-radius: 30px;
-  gap: 10px;
+  border-radius: 50px;
+  align-items: center;
 }
 main .filter .fa-solid {
   color: #0065FC;
-  background-color: #c0f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #deebff;
   padding: 20px;
   border-radius: 50%;
   margin: -3px;
+  width: 48px;
 }
 main .filter .filter-display:hover {
   cursor: pointer;
+  transform: scale(1.03);
   background-color: #F2F2F2;
 }
 main .filter .filter-name {
@@ -150,18 +156,16 @@ main .filter .filter-name {
                                     /* INFO */
 
 main .info {
-  /* margin-top: 2%; */
-  justify-content:flex-start;
   display: flex;
 }
 main .info i {
-  display: flex;
   color: #0065FC;
-  font-size: 15px;
-  border: 3px solid #F2F2F2;
-  background-color: #ffffff;
-  align-items: center; /* pour centrer hauteur  */
-  border-radius: 5px 5px 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #deebff;
+  padding: 15px;
+  border-radius: 50%;
 }
 
 main .info p {
