@@ -64,8 +64,7 @@ main .search {
   display: flex;
 }
 
-main .search i {
-  /* display: flex; */
+main .search > i {
   font-weight: bold; 
   font-size: 20px;
   padding: 12px 20px;
@@ -108,39 +107,70 @@ main .search-button:hover {
 
                                     /* FILTER */
 
+
+
+
+
 main .filter {
-  /* position: relative; */
   display: flex;
-  border: 1px red solid;
-  margin-top: 2%;
 }
-
-main .title-filter {
-/* au besoin */
+main .filter-title {
+  font-weight: bold;
 }
-
-
-main .filter .filter-button {
-  flex-wrap: wrap;   /* resonsive des lignes  */
-  margin: 10px;
-  display: flex;
-  /* justify-content: flex-end; */
-  font-weight: bold; 
-  font-size: 15px;
-  border-radius: 30px 30px 30px 30px;
-  border-color: 2px #F2F2F2;
-  background-color: #ffffff;
-  cursor: pointer;
+main .filter-list {
   align-items: center; /* pour centrer hauteur  */
+  flex-wrap: wrap; /* resonsive des lignes  */
+  display: flex;
+  gap: 20px;
+}
+main .filter-display {
+  border: 3px solid #F2F2F2;
+  margin-left: 10px;
+  display: flex;
+  border-radius: 30px;
+  gap: 10px;
+}
+main .filter .fa-solid {
+  color: #0065FC;
+  background-color: #c0f8f8;
+  padding: 20px;
+  border-radius: 50%;
+  margin: -3px;
+}
+main .filter .filter-display:hover {
+  cursor: pointer;
+  background-color: #F2F2F2;
 }
 
-main .filter i {
+
+/* main .filter-list {
+  border: 1px solid red;
   display: flex;
-  font-size: 30px;
-  background-color: #F2F2F2;
-  border-radius: 30px 30px 30px 30px;
-  color: #0065FC;
+  align-items: center;
+  gap: 10px;
 }
+
+main .filter .fa-solid {
+  color: #0065FC;
+  background-color: #1effff;
+  padding: 10px;
+  border-radius: 50%;
+  margin: -3px;
+}
+main .filter span {
+  font-weight: bold;
+}
+main .filter span:hover {
+  cursor: pointer;
+  background-color: #F2F2F2;
+} */
+
+
+
+
+
+
+
 
 
 
@@ -339,6 +369,9 @@ footer {
   nav .logo2 {
     display: none;
   }
+  main .search-mini {
+    display: none;
+  }
 }
 
   /* Tablette*/
@@ -349,6 +382,10 @@ footer {
   nav .logo2 { /*cache logo 2*/
     display: none;
   }
+  main .search-mini {
+    display: none;
+  }
+
 }
 
 
@@ -380,16 +417,21 @@ footer {
     border-top-color: transparent; /*cacher border du haut*/
     border-bottom-color:#0065FC ; /*changer couleur de la border grise en bleu*/
 }
-main .search-button {
-  border-radius: 9px 9px 9px 9px;
-  background: #0065FC;
-  text-align: center;
-  color: white;
-  cursor: pointer;
-  font-size: 20px;
-}
+  main .reseach {
+    display: none;
+  }
 
+  main .search-mini {
+    display: inline;
+    border-radius: 100px 0px 0px 10px;
+  }
 
+  main .search {
+    justify-content: center;
+    border: 1px solid red;
+    width: 100%;
+    overflow: auto;
+  }
 
 
 }
