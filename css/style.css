@@ -52,11 +52,6 @@ main {
 }
 
 
-main .title {
-  /* au besoin */
-}
-
-
                                    /* RECHERCHE */
 
 main .search {
@@ -76,10 +71,9 @@ main input ::placeholder {
   color: black;
 }
 main .search-block {
-  /* display: flex; */
   border: 2px solid #F2F2F2;
-  height: 52px;  /*taille hauteur box*/
-  width: 200px;  /*taille largeur box*/
+  height: 52px;
+  width: 200px;
   font-weight: bold;
 }
 
@@ -151,30 +145,30 @@ main .filter .filter-name {
 
 
 
-
-
                                     /* INFO */
 
 main .info {
   display: flex;
+  align-items: center;
 }
-main .info i {
+main .info .fa-solid {
   color: #0065FC;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #deebff;
-  padding: 15px;
+  border: 2px solid #F2F2F2;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 
 main .info p {
-  margin-left: 2%;
+  margin-left: 1%;
 }
 
 
 
-/* CONTAINER HEBERGEMENT / POPULAR */
+/* TODO CONTAINER HEBERGEMENT / POPULAR */
 
 
 
@@ -385,7 +379,7 @@ footer {
   nav .nav-link {
     width: 50%;
     justify-content: center;
-    border-bottom: 4px solid #F2F2F2; /*barre grise*/
+    border-bottom: 4px solid #F2F2F2;
 }
   nav .nav-link:hover {
     border-top-color: transparent; /*cacher border du haut*/
