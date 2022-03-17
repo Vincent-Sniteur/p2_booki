@@ -199,13 +199,13 @@ main .result {
 main .hebergement {
   border-radius: 20px;
   background-color: #F2F2F2;
-  flex-basis: 75%;
+  flex-basis: 70%;
   padding: 10px;
 }
 /* Gestion BOX LISTE hebergement */
 main .hebergement-list {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -256,22 +256,34 @@ main .hebergement-card a {
   object-position: center;
 }
 
-/* Gestion Titre dans la carte */
-.hebergement-card-content-title h3 {
-  margin: 3px;
-  padding: 5px;
+/* Gestion description dans la carte */
+.hebergement-card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-basis: 100%;
 }
 
-/* Gestion description "soustitre + prix " */
-.hebergement-card-description {
-  margin: 15px 10px 3px 10px;
+/* Gestion Titre h3 pour description box*/
+.hebergement-card-description h3 {
+  margin: 3px 10px 0px 10px;
 }
+
+/* Gestion description box */
+.hebergement-card-description p {
+  margin: 3px 10px 5px 10px;
+}
+
+/* Gestion note box */
 .hebergement-card-note {
-  margin: 0px 10px 3px 10px;
+  margin: 3px 10px 5px 10px;
 }
 
 /* gestion du P bas gauche de la box */
 .hebergement-plus {
+  display: block;
+  margin: 20px 0px 0px 10px;
+  justify-content: flex-start;
   color: inherit;
   font-weight: bold;
   text-decoration: none;
@@ -316,7 +328,7 @@ main .popularity-title {
 /* Gestion BOX LISTE popularity */
 main .popularity-list {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -370,16 +382,22 @@ main .popularity-card-content img {
 
 /* Gestion de la box dans la box */
 main .popularity-card-description {
-  flex-basis: 100%;
-  padding: 0px 5px;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
+  flex-basis: 100%;
 }
 
-/* main .popularity-card-sousdescription {
+main .popularity-card-description h3 {
+  margin: 0px 10px 0px 10px;
+}
+main .popularity-card-description p {
+  margin: 3px 10px 50px 10px;
+}
 
-} */
-
-
+main .popularity-card-note {
+  margin-left: 10px;
+}
 
 
 
