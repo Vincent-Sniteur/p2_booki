@@ -167,60 +167,7 @@ main .info p {
 }
 
 
-
-/* TODO CONTAINER HEBERGEMENT / POPULAR */
-
-main .result {
-  display: flex;
-  gap: 20px;
-}
-
-              /* HEBERGEMENT */
-main .result .hebergement {
-  border-radius: 10px;
-  background-color: #F2F2F2;
-  flex-basis: 75%;
-  padding: 5px;
-}
-
-main .result .hebergement a {
-  font-weight: bold;
-  color: inherit;
-  text-decoration: none;
-}
-
-.hebergement .hebergement-list {
-  display: flex;
-  gap: 10px;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.hebergement .hebergement-list div {
-  flex-basis: 30%;
-  margin-bottom: 10px;
-}
-.hebergement-display {
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 5px;
-}
-
-.hebergement-display:hover {
-  transform: scale(1.03);
-}
-
-.hebergement-display img {
-  border-radius: 20px 20px 0px 0px;
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-}
-
-.hebergement-display p {
-  margin: 3px;
-}
-
+/* couleur etoiles FA */
 .blue-star {
   color: #0065FC;
 }
@@ -233,40 +180,393 @@ main .result .hebergement a {
 
 
 
-              /* POPULARITY */
-.result .popularity {
-  border-radius: 10px;
+
+
+
+
+
+                   /* CONTAINER HEBERGEMENT / POPULAR */
+
+main .result {
+  display: flex;
+  gap: 20px;
+}
+
+                   /* CONTAINER HEBERGEMENT */
+
+
+/* Gestion BOX global Hebergement */
+main .hebergement {
+  border-radius: 20px;
+  background-color: #F2F2F2;
+  flex-basis: 75%;
+  padding: 10px;
+}
+/* Gestion BOX LISTE hebergement */
+main .hebergement-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Box du titre */
+main .hebergement-box-title {
+  display: block;
+}
+
+/* Content box Titre Hebergement*/
+main .hebergement-title {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Gestion de la carte */
+main .hebergement-card {
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #2929292e;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  flex-basis: 30%;
+}
+
+/* Gestion Hover de la carte */
+main .hebergement-card:hover {
+  transform: scale(1.03);
+}
+
+/* Gestion des A dans la carte */
+main .hebergement-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Gestion des IMG dans la carte */
+.hebergement-card-content-img {
+  display: block;
+  height: 120px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Gestion Titre dans la carte */
+.hebergement-card-content-title h3 {
+  margin: 3px;
+  padding: 5px;
+}
+
+/* Gestion description "soustitre + prix " */
+.hebergement-card-description {
+  margin: 15px 10px 3px 10px;
+}
+.hebergement-card-note {
+  margin: 0px 10px 3px 10px;
+}
+
+/* gestion du P bas gauche de la box */
+.hebergement-plus {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    /* CONTAINER POPULARITY */
+
+
+/* Gestion BOX global Populaire */
+main .popularity {
+  border-radius: 20px;
   background-color: #F2F2F2;
   flex-basis: 30%;
-  padding: 5px;
+  padding: 10px;
   align-items: flex-end;
   margin-bottom: 20px;
 }
 
-.result .popularity-list div {
+/* Box du titre */
+main .popularity-box-title {
+/*  */
+}
+
+/* Content box Titre popularity*/
+main .popularity-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Gestion BOX LISTE popularity */
+main .popularity-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Gestion de la carte */
+main .popularity-card {
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #2929292e;
+  cursor: pointer;
+  flex-basis: 100%;
+}
+
+/* Gestion Hover de la carte */
+main .popularity-card:hover {
+  transform: scale(1.03);
+}
+
+/* Gestion des A dans la carte */
+main .popularity-card a {
+  color: inherit;
+  text-decoration: none;
+}
+/* Content = tout intérieur de la box */
+main .popularity-card-content {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Gestion div dans la box pour image*/
+main .popularity-card-img {
+  border-radius: 20px 0 0 20px;
+  position: relative;
+  width: 40%;
+  min-width: 40%;
+  max-width: 40%;
+}
+
+/* Gestion de l'image dans la div */
+main .popularity-card-content img {
+  border-radius: 20px 0 0 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Gestion de la box dans la box */
+main .popularity-card-description {
+  flex-basis: 100%;
+  padding: 0px 5px;
+  justify-content: flex-start;
+}
+
+/* main .popularity-card-sousdescription {
+
+} */
+
+
+
+
+
+
+
+
+
+
+/* .popularity-card-img div {
+  display: block;
+} */
+
+
+
+
+
+
+
+
+/* Gestion taille des cartes de hebergement et populaire */
+/* .hebergement .card-display {
+  box-shadow: 0 0 16px rgb(36, 36, 36);
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 5px;
+  height: 100%;
+}
+
+.hebergement .card-display:hover {
+  transform: scale(1.03);
+}
+
+.popularity .card-display {
+  display: block;
+  background-color: white;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.popularity .card-display:hover {
+  transform: scale(1.03);
+} */
+
+
+
+/* TODO CONTAINER HEBERGEMENT / POPULAR */
+
+
+
+              /* HEBERGEMENT */
+/* Box Hebergement global */
+/* main .result .hebergement {
+  border-radius: 20px;
+  background-color: #F2F2F2;
+  flex-basis: 75%;
+  padding: 10px;
+}
+
+.hebergement .hebergement-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hebergement .card-content-hebergement {
+  flex-basis: 30%;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+.hebergement-list img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hebergement-list p {
+  margin: 3px;
+}
+
+.hebergement-plus {
+  margin-left: 20px;
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+ */
+
+
+
+
+              /* POPULARITY */
+/* Definition de mon block Populaire */
+/* .popularity {
+  border-radius: 20px;
+  background-color: #F2F2F2;
+  flex-basis: 30%;
+  padding: 10px;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  border: 1px solid red;
+} */
+
+/* Titre "les plus populaire" display avec espace pour l'icon FA */
+/* .popularity-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.popularity-list .card-content-hebergement {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.popularity-list .popularity-name p {
+  border: 1px solid blue;
   display: flex;
   flex-direction: column;
 }
 
-.popularity-display {
-  background-color: white;
+.card-content-popularity img {
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popularity-list p {
+  margin: 3px;
+}
+ */
+
+
+
+
+
+
+
+
+                /* ACTIVITY */
+
+
+main .activity {
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid red;
+  padding: 5px;
+  flex-basis: auto;
+}
+
+main .title-activity {
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
+
+.activity .activity-display {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.activity .activity-display div {
+  margin-bottom: 10px;
+}
+.activity-display {
+  background-color: #ffffff;
   border-radius: 20px;
   padding: 5px;
 }
 
-.popularity-display:hover {
-  transform: scale(1.03);
-}
 
-.popularity-display img {
+.activity-display img {
   border-radius: 20px 20px 0px 0px;
-  width: 100%;
-  height: 80px;
-  object-fit: cover;
-}
-
-.popularity-display p {
-  margin: 3px;
+  height: 120px;
 }
 
 
@@ -281,40 +581,11 @@ main .result .hebergement a {
 
 
 
-                            /* ACTIVITY */
-
-main .activity {
-  margin-top: 2%;
-  display: flex;
-  background-color: #F2F2F2;
-  width: 100%;
-  height: 300px;
-}
-main .activity h1 {
-
-}
 
 
-                      /* TEMPORAIRE */ 
 
-main .activity-images-big {
-  display: block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  max-height: 300px;
-  background-color: #fff;
-}
-main .activity-images-medium {
-  display: block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  max-height: 300px;
-  background-color: #fff;
-}
+
+
 
 
 
@@ -354,7 +625,7 @@ footer {
   /* Tablette*/
 @media only screen and (max-width: 992px) {
   nav .nav-block {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   nav .logo2 { /*cache logo 2*/
     display: none;
@@ -370,7 +641,7 @@ footer {
   /* Smartphone */
 @media only screen and (max-width: 768px) {
   nav .nav-block {
-    border: 1px solid rgb(255, 0, 242);
+    /* border: 1px solid rgb(255, 0, 242); */
 }
 
   nav .logo { /*cache logo 1*/
@@ -405,13 +676,16 @@ footer {
 
   main .search {
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
-    overflow: auto;
+    /* overflow: auto; */
 }
 main .result {
   flex-direction: column;
 }
+/* main .hebergement .hebergement-list {
+  flex-direction: column;
+} */
 main .result .popularity {
   order: -1;
 }
