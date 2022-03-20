@@ -340,6 +340,7 @@ main .popularity-card {
   border-radius: 20px;
   box-shadow: 0 0 15px #2929292e;
   cursor: pointer;
+  transition-duration: 0.1s;
   flex-basis: 100%;
 }
 
@@ -405,187 +406,113 @@ main .popularity-card-note {
 
 
 
-
-/* .popularity-card-img div {
-  display: block;
-} */
+                    /* Activity */
 
 
-
-
-
-
-
-
-/* Gestion taille des cartes de hebergement et populaire */
-/* .hebergement .card-display {
-  box-shadow: 0 0 16px rgb(36, 36, 36);
-  cursor: pointer;
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 5px;
-  height: 100%;
-}
-
-.hebergement .card-display:hover {
-  transform: scale(1.03);
-}
-
-.popularity .card-display {
-  display: block;
-  background-color: white;
-  padding: 0.375rem;
-  border-radius: 1.25rem;
-  box-shadow: 0 0 16px #0000002e;
-  transition-duration: 0.1s;
-  cursor: pointer;
-  box-sizing: border-box;
-  height: 100%;
-}
-
-.popularity .card-display:hover {
-  transform: scale(1.03);
-} */
-
-
-
-/* TODO CONTAINER HEBERGEMENT / POPULAR */
-
-
-
-              /* HEBERGEMENT */
-/* Box Hebergement global */
-/* main .result .hebergement {
-  border-radius: 20px;
-  background-color: #F2F2F2;
-  flex-basis: 75%;
-  padding: 10px;
-}
-
-.hebergement .hebergement-list {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hebergement .card-content-hebergement {
-  flex-basis: 30%;
-  margin-bottom: 10px;
-  color: inherit;
-}
-
-.hebergement-list img {
-  border-radius: 20px 20px 0px 0px;
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.hebergement-list p {
-  margin: 3px;
-}
-
-.hebergement-plus {
-  margin-left: 20px;
-  color: inherit;
-  font-weight: bold;
-  text-decoration: none;
-}
- */
-
-
-
-
-              /* POPULARITY */
-/* Definition de mon block Populaire */
-/* .popularity {
-  border-radius: 20px;
-  background-color: #F2F2F2;
-  flex-basis: 30%;
-  padding: 10px;
-  align-items: flex-end;
-  margin-bottom: 20px;
-  border: 1px solid red;
-} */
-
-/* Titre "les plus populaire" display avec espace pour l'icon FA */
-/* .popularity-title {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.popularity-list .card-content-hebergement {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.popularity-list .popularity-name p {
-  border: 1px solid blue;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-content-popularity img {
-  border-radius: 10px 0 0 10px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.popularity-list p {
-  margin: 3px;
-}
- */
-
-
-
-
-
-
-
-
-                /* ACTIVITY */
-
-
+/* Gestion BOX global Activity */
 main .activity {
-  border-radius: 10px;
-  margin-top: 10px;
-  border: 1px solid red;
-  padding: 5px;
-  flex-basis: auto;
+  border-radius: 20px;
+  flex-basis: 70%;
+  padding: 10px;
 }
 
-main .title-activity {
-  font-weight: bold;
-  color: inherit;
-  text-decoration: none;
-}
-
-.activity .activity-display {
+/* Gestion BOX LISTE Activity */
+main .activity-list {
   display: flex;
   gap: 10px;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.activity .activity-display div {
-  margin-bottom: 10px;
-}
-.activity-display {
-  background-color: #ffffff;
+
+/* Gestion de la carte */
+main .activity-card {
+  /* display: block; */
   border-radius: 20px;
-  padding: 5px;
+  box-shadow: 0 0 15px #2929292e;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  border: 1px solid blue;
 }
 
 
-.activity-display img {
-  border-radius: 20px 20px 0px 0px;
-  height: 120px;
+/* Gestion Hover de la carte */
+main .activity-card:hover {
+  transform: scale(1.03);
 }
+
+/* Gestion des A dans la carte */
+main .activity-card a {
+  color: inherit;
+  text-decoration: none;
+}
+/* Content = tout intérieur de la box */
+main .activity-card-content {
+  height: 100%;
+  border: 1px solid red;
+}
+
+/* Gestion div dans la box pour image*/
+main .activity-card-img {
+  height: 150px;
+  width: 250px;
+}
+main .activity-card-img-big {
+  height: 350px;
+  width: 250px;
+}
+
+/* Gestion de l'image dans la div */
+main .activity-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 20px 0 0;
+}
+main .activity-card-img-big img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 20px 0 0;
+}
+/* Gestion de la h4 dans la box */
+main .activity-card-description h4 {
+  margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
