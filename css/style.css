@@ -121,7 +121,7 @@ main .filter-list {
 }
 
 main .filter-display {
-  border: 2px solid #d9d9d9;
+  border: 3px solid #F2F2F2;
   margin-left: 10px;
   display: flex;
   border-radius: 50px;
@@ -132,7 +132,7 @@ main .filter .fa-solid {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #deebff;
+  background-color: #DEEBFF;
   padding: 20px;
   border-radius: 50%;
   margin: -3px;
