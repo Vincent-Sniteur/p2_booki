@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <title>Booki</title>
     <meta charset="UTF-8">
@@ -9,31 +9,34 @@
     <!-- balise meta SEO google-->
     <meta name="author" content="Vincent ~ ~">
     <meta name="description" content="Votre recherche d'Hébergement et d'Activités préféré">
+
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ad31259386.js" crossorigin="anonymous"></script>
+
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    <!--header-->
+
+<!--Header-->
     <header>
         <nav>
             <!-- Import Logo -->
             <img class="logo" src="images/logo/Booki.png" alt="Booki Logo">
             <img class="logo2" src="images/logo/Booki@3x.png" alt="Booki Logo Responsive">
+
             <!-- Block Link Nav -->
             <div class="nav-block">
                 <a href="#hebergement" class="nav-link">Hébergements</a>
                 <a href="#activity" class="nav-link">Activités</a>
             </div>
         </nav>
-
     </header>
-    <!--header-->
+<!--END Header-->
 
-    <!--main-->
+<!--MAIN-->
     <main>
         <!-- Titre -->
         <div class="title">
@@ -45,29 +48,31 @@
             </p>
         </div>
 
-        <!-- Reseah Bar -->
+        <!-- Research Bar -->
         <div class="search">
-            <!-- import logo position fontAwesome -->
+            <!-- import logo position FontAwesome -->
             <i class="fa-solid fa-location-dot"></i>
 
-            <!-- zone recherche -->
+            <!-- Zone Bouton Recherche -->
             <input type="text" class="search-block" placeholder="Marseille, France">
                 <button type="submit" class="search-button">
                     <span class="research">
                         Rechercher
                     </span>
 
+                        <!-- Import mini logo research FontAwesome-->
                     <span class="search-mini">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
             </button>
         </div>
 
-        <!-- Filter zone -->
+        <!-- Filter Zone -->
         <div class="filter">
-            <!-- Titre filtre -->
+            <!-- Titre Filtre -->
             <h2 class="filter-title">Filtres</h2>
 
+            <!-- Liste Filtre -->
             <div class="filter-list">
                 <div class="filter-display">
                     <i class="fa-solid fa-money-bill-wave"></i> 
@@ -91,35 +96,51 @@
         </div>
 
 
-        
+        <!-- Affichage sous filtre + logo FontAwesome -->
         <div class="info">
             <i class="fa-solid fa-info"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
-        <!-- Hebergement / popular zone result research-->
+        <!-- Hebergement & Popular zone result research-->
         <section class="result">
 
-             <!-- research result hebergement-->
-             <!-- TODO VOIR SI c'est normal le € et prix en gras certaine fois -->
+             <!-- Research result hebergement-->
+             <!-- TODO VOIR avec mentor si normal le € et prix en gras certaine fois -->
             <div class="hebergement" id="hebergement">
+
+                <!-- Titre box hebergement -->
                 <div class="hebergement-box-title">
                     <h2 class="hebergement-title">Hébergement à Marseille</h2>
                 </div>
+
+                <!-- Liste Hebergement Appartement Resultat-->
                 <div class="hebergement-list">  
                     <!-- Carte 1 -->
                     <div class="hebergement-card">
+
+                        <!-- Lien redirection de la carte -->
                         <a href="#">
+
+                            <!-- Gestion content carte 1 -->
                             <div class="hebergement-card-content">
-                                <img class="hebergement-card-content-img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Description">
+
+                                <!-- Importation image dans la carte -->
+                                <img class="hebergement-card-content-img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                               
+                                <!-- Gestion Description de la carte -->
                                 <div class="hebergement-card-description">
+
                                     <h3>
                                         Auberge la Cannebière
                                     </h3>
+
                                     <p>
                                         Nuit à partir de
                                         <strong class="hebergement-card-price">25€</strong>
                                     </p>
+
+                                    <!-- Importation Etoiles FA logo + gestion couleur -->
                                     <div class="hebergement-card-note">
                                         <i class="fa-solid fa-star blue-star"></i>
                                         <i class="fa-solid fa-star blue-star"></i>
@@ -134,17 +155,29 @@
 
                     <!-- Carte 2 -->
                     <div class="hebergement-card">
+
+                        <!-- Lien redirection de la carte -->
                         <a href="#">
+
+                            <!-- Gestion content carte 2 -->
                             <div class="hebergement-card-content">
-                                <img class="hebergement-card-content-img" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Description">
+
+                                <!-- Importation image dans la carte -->
+                                <img class="hebergement-card-content-img" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                                
+                                <!-- Gestion Description de la carte -->
                                 <div class="hebergement-card-description">
+
                                     <h3>
                                         Hôtel du port
                                     </h3>
+
                                     <p>
                                         Nuit à partir de
                                         <strong class="hebergement-card-price">52€</strong>
                                     </p>
+                                    
+                                    <!-- Importation Etoiles FA logo + gestion couleur -->
                                     <div class="hebergement-card-note">
                                         <i class="fa-solid fa-star blue-star"></i>
                                         <i class="fa-solid fa-star blue-star"></i>
@@ -158,17 +191,29 @@
                     </div>
                     <!-- Carte 3 -->
                     <div class="hebergement-card">
+
+                        <!-- Lien redirection de la carte -->
                         <a href="#">
+
+                            <!-- Gestion content carte 3 -->
                             <div class="hebergement-card-content">
-                                <img class="hebergement-card-content-img" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Description">
+
+                                <!-- Importation image dans la carte -->
+                                <img class="hebergement-card-content-img" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
+                                
+                                <!-- Gestion Description de la carte -->
                                 <div class="hebergement-card-description">
+
                                     <h3>
                                         Hôtel Les mouettes
                                     </h3>
+
                                     <p>
                                         Nuit à partir de
                                         <strong class="hebergement-card-price">76€</strong>
                                     </p>
+                                    
+                                    <!-- Importation Etoiles FA logo + gestion couleur -->
                                     <div class="hebergement-card-note">
                                         <i class="fa-solid fa-star blue-star"></i>
                                         <i class="fa-solid fa-star blue-star"></i>
@@ -183,17 +228,29 @@
                     
                     <!-- Carte 4 -->
                     <div class="hebergement-card">
+
+                        <!-- Lien redirection de la carte -->
                         <a href="#">
+
+                            <!-- Gestion content carte 4 -->
                             <div class="hebergement-card-content">
-                                <img class="hebergement-card-content-img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Description">
+
+                                <!-- Importation image dans la carte -->
+                                <img class="hebergement-card-content-img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                                
+                                <!-- Gestion Description de la carte -->
                                 <div class="hebergement-card-description">
+
                                     <h3>
                                         Hôtel de la mer
                                     </h3>
+
                                     <p>
                                         Nuit à partir de
                                         <strong class="hebergement-card-price">46€</strong>
                                     </p>
+                                    
+                                    <!-- Importation Etoiles FA logo + gestion couleur -->
                                     <div class="hebergement-card-note">
                                         <i class="fa-solid fa-star blue-star"></i>
                                         <i class="fa-solid fa-star blue-star"></i>
@@ -208,17 +265,29 @@
 
                     <!-- Carte 5 -->
                     <div class="hebergement-card">
+
+                        <!-- Lien redirection de la carte -->
                         <a href="#">
+
+                            <!-- Gestion content carte 5 -->
                             <div class="hebergement-card-content">
-                                <img class="hebergement-card-content-img" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Description">
+
+                                <!-- Importation image dans la carte -->
+                                <img class="hebergement-card-content-img" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+                                
+                                <!-- Gestion Description de la carte -->
                                 <div class="hebergement-card-description">
+
                                     <h3>
                                         Auberge Le Panier
                                     </h3>
+
                                     <p>
                                         Nuit à partir de
                                         <strong class="hebergement-card-price">23€</strong>
                                     </p>
+                                    
+                                    <!-- Importation Etoiles FA logo + gestion couleur -->
                                     <div class="hebergement-card-note">
                                         <i class="fa-solid fa-star blue-star"></i>
                                         <i class="fa-solid fa-star blue-star"></i>
@@ -233,17 +302,29 @@
                     
                     <!-- Carte 6 -->
                     <div class="hebergement-card">
+
+                        <!-- Lien redirection de la carte -->
                         <a href="#">
+
+                            <!-- Gestion content carte 6 -->
                             <div class="hebergement-card-content">
-                                <img class="hebergement-card-content-img" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Description">
+
+                                <!-- Importation image dans la carte -->
+                                <img class="hebergement-card-content-img" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+                                
+                                <!-- Gestion Description de la carte -->
                                 <div class="hebergement-card-description">
+
                                     <h3>
                                         Hôtel chez Amina
                                     </h3>
+
                                     <p>
                                         Nuit à partir de
                                         <strong class="hebergement-card-price">96€</strong>
                                     </p>
+                                    
+                                    <!-- Importation Etoiles FA logo + gestion couleur -->
                                     <div class="hebergement-card-note">
                                         <i class="fa-solid fa-star blue-star"></i>
                                         <i class="fa-solid fa-star blue-star"></i>
@@ -256,10 +337,11 @@
                         </a>
                     </div>
                 </div> 
-                  <a href="#" class="hebergement-plus">Afficher Plus</a>
+                <!-- Afficher plus sous hebergement -->
+                <a href="#" class="hebergement-plus">Afficher Plus</a>
             </div>
 
-             <!-- popularity -->
+             <!-- Popularity -->
              <div class="popularity">
                 <div class="popularity-box-title">
                     <h2 class="popularity-title">
@@ -350,11 +432,12 @@
                     </div>
                 </div> 
             </div>
-
-
         </section>
+<!-- END Hebergement / popular zone result-->
 
-        <!-- activity zone -->
+
+
+<!--Start Activity-->
         <div class="activity" id="activity">
             <div class="activity-box-title">
                 <h2 class="activity-title">
@@ -456,7 +539,7 @@
 
             </div>
         </div>
-
+<!--END Activity-->
 
 
 
@@ -471,29 +554,37 @@
 
 
     </main>
-    <!--main-->
+<!--END Main-->
 
-    <!--Footer-->
+<!--Start Footer-->
     <footer class="footer">
+        <!-- Footer Box Global-->
         <div class="footer-box">
-          <div class="footer-box-display">
-            <h2 class="footer-box-display-title">A propos</h2>
-            <a href="#" class="footer-box-display-link">Fonctionnement du site</a>
-            <a href="#" class="footer-box-display-link">Conditions générales de vente</a>
-            <a href="#" class="footer-box-display-link">Données et confidentialité</a>
-          </div>
-          <div class="footer-box-display">
-            <h2 class="footer-box-display-title">Nos hébergements</h2>
-            <a href="#" class="footer-box-display-link">Charte qualité</a>
-            <a href="#" class="footer-box-display-link">Soumettre votre hôtel</a>
-          </div>
-          <div class="footer-box-display">
-            <h2 class="footer-box-display-title">Assitance</h2>
-            <a href="#" class="footer-box-display-link">Centre d'aide</a>
-            <a href="#" class="footer-box-display-link">Nous contacter</a>
-          </div>
+
+            <!-- Footer Box 1 -->
+            <div class="footer-box-display">
+                <h2 class="footer-box-display-title">A propos</h2>
+                <a href="#" class="footer-box-display-link">Fonctionnement du site</a>
+                <a href="#" class="footer-box-display-link">Conditions générales de vente</a>
+                <a href="#" class="footer-box-display-link">Données et confidentialité</a>
+            </div>
+
+            <!-- Footer Box 2 -->
+            <div class="footer-box-display">
+                <h2 class="footer-box-display-title">Nos hébergements</h2>
+                <a href="#" class="footer-box-display-link">Charte qualité</a>
+                <a href="#" class="footer-box-display-link">Soumettre votre hôtel</a>
+            </div>
+            
+            <!-- Footer Box 3 -->
+            <div class="footer-box-display">
+                <h2 class="footer-box-display-title">Assitance</h2>
+                <a href="#" class="footer-box-display-link">Centre d'aide</a>
+                <a href="#" class="footer-box-display-link">Nous contacter</a>
+            </div>
+
         </div>
-      </footer>
-    <!--Footer-->
+    </footer>
+<!--END Footer-->
 </body>
 </html>

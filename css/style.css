@@ -595,10 +595,9 @@ footer a:hover {
 
 
 
+                               /*MEDIA RESPONSIVE*/
 
-
-                               /* MEDIA RESPONSIVE */
-  /* ordinateurs */
+/*PC*/
 @media only screen and (min-width: 992px) {
 nav .nav-block {
   border: 1px solid green;
@@ -610,32 +609,41 @@ main .search-mini {
   display: none;
 }
 }
+/* END PC*/
 
-  /* Tablette*/
+
+
+/*TABLETTE*/
 @media only screen and (max-width: 992px) {
 nav .nav-block {
   border: 1px solid red;
 }
 
 /* LOGO */
-
 /*cache logo 2*/
 nav .logo2 {
   display: none;
 }
 
 /* RESEARCH */
-
 /* cache FA logo */
 main .search-mini {
   display: none;
 }
 
+
+
+/* TODO "Hebergement" mise en column */
+main .hebergement .hebergement-list {
+  /* flex-direction: column; */
 }
 
+}
+/* END TABLETTE */
 
 
-  /* Smartphone */
+
+/* SMARTPHONE */
 @media only screen and (max-width: 768px) {
 
 /* LOGO */
@@ -714,7 +722,7 @@ main .result .popularity {
 footer .footer-box {
   flex-direction: column;
 }
-/* END Smartphone Media */
+/* END SMARTPHONE */
 }
 
 
