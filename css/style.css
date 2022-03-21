@@ -48,7 +48,7 @@ nav .nav-link:hover {
 }
 
 main {
-  padding: 0 2%;
+  padding: 0 20px;
 }
 
 
@@ -101,21 +101,27 @@ main .search-button:hover {
 
 
                                     /* FILTER */
+
+/* Box Global Filter */
 main .filter {
   display: flex;
   margin-top: 2%;
+  flex-wrap: wrap;
 }
+/* Box Titre Filter */
 main .filter-title {
   font-weight: bold;
 }
+/* Box Liste filtre */
 main .filter-list {
   align-items: center;
   flex-wrap: wrap;
   display: flex;
   gap: 20px;
 }
+
 main .filter-display {
-  border: 3px solid #d9d9d9;
+  border: 2px solid #d9d9d9;
   margin-left: 10px;
   display: flex;
   border-radius: 50px;
@@ -543,7 +549,7 @@ main .activity-card-description h4 {
 footer {
   background-color: #F2F2F2;
   width: 100%;
-  height: 150px;
+  height: 200px;
 }
 
 
@@ -585,52 +591,67 @@ footer {
 
   /* Smartphone */
 @media only screen and (max-width: 768px) {
-  nav .nav-block {
-    /* border: 1px solid rgb(255, 0, 242); */
-}
 
-  nav .logo { /*cache logo 1*/
+/* LOGO */
+nav .logo { /*cache logo 1*/
     display: none;
 }
-  nav .logo2 {  /*affiche logo 2*/
+
+nav .logo2 {  /*affiche logo 2*/
     display: flex;
     width: auto;
     margin: auto;
 }
-  nav .nav-block {
+
+/* NAVBAR */
+nav .nav-block {
     width: 100%;
     text-align:center;
 }
-  nav .nav-link {
+
+nav .nav-link {
     width: 50%;
     justify-content: center;
     border-bottom: 4px solid #F2F2F2;
 }
-  nav .nav-link:hover {
+
+nav .nav-link:hover {
     border-top-color: transparent; /*cacher border du haut*/
     border-bottom-color:#0065FC ; /*changer couleur de la border grise en bleu*/
 }
-  main .reseach {
+
+
+/* RESEARCH */
+main .research {
     display: none;
 }
 
-  main .search-mini {
+main .search-mini {
     display: inline;
     border-radius: 100px 0px 0px 10px;
 }
 
-  main .search {
+main .search {
     justify-content: center;
     /* border: 1px solid red; */
     width: 100%;
     /* overflow: auto; */
 }
+
+
+/* Main */
 main .result {
   flex-direction: column;
 }
-/* main .hebergement .hebergement-list {
+main .hebergement {
+  background-color: white;
   flex-direction: column;
-} */
+}
+/* "Hebergement" mise en column */
+main .hebergement .hebergement-list {
+  flex-direction: column;
+}
+/* Changement ordre de priorité */
 main .result .popularity {
   order: -1;
 }
