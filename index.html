@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <title>Booki</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Booki</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- balise meta SEO google-->
-    <meta name="author" content="Vincent ~ ~">
-    <meta name="description" content="Votre recherche d'Hébergement et d'Activités préféré">
+        <!-- balise meta SEO google-->
+        <meta name="author" content="Vincent ~ ~">
+        <meta name="description" content="Votre recherche d'Hébergement et d'Activités préféré proche de chez vous">
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/ad31259386.js" crossorigin="anonymous"></script>
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/ad31259386.js" crossorigin="anonymous"></script>
 
-    <!-- TODO : Voir si obligé nom " normalize " pour le CSS  -->
-    <link rel="stylesheet" href="css/style.css">
+        <!-- 
+            TODO : Voir si obligé nom "normalize" pour le CSS 
+            TODO : Demander si droit de refactorisation du CSS dans plusieurs fichier
+        -->
+        <link rel="stylesheet" href="css/style.css">
 
-</head>
+    </head>
 <body>
-
-<!--Header-->
+<!--START HEADER-->
     <header>
         <nav>
             <!-- Import Logo -->
@@ -34,9 +36,8 @@
             </div>
         </nav>
     </header>
-<!--END Header-->
-
-<!--MAIN-->
+<!--END HEADER-->
+<!--START MAIN-->
     <main>
         <!-- Titre -->
         <div class="title">
@@ -48,8 +49,8 @@
             </p>
         </div>
 
-        <!-- Research Bar -->
-        <div class="search">
+        <!-- FORM Research Bar-->
+        <form class="search">
             <!-- import logo position FontAwesome -->
             <i class="fa-solid fa-location-dot"></i>
 
@@ -64,8 +65,8 @@
                     <span class="search-mini">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
-            </button>
-        </div>
+                </button>
+        </form>
 
         <!-- Filter Zone -->
         <div class="filter">
@@ -340,8 +341,8 @@
                 <!-- Afficher plus sous hebergement -->
                 <a href="#" class="hebergement-plus">Afficher Plus</a>
             </div>
-
-             <!-- Popularity -->
+            <!-- END HEBERGEMENT -->
+            <!-- START POPULATIRY -->
              <div class="popularity">
                 <div class="popularity-box-title">
                     <h2 class="popularity-title">
@@ -432,70 +433,82 @@
                     </div>
                 </div> 
             </div>
+            <!-- END POPULATIRY -->
         </section>
-<!-- END Hebergement / popular zone result-->
+<!-- END HEBERGEMENT & POPULARITY SECTION RESULT-->
 
 
+<!-- TODO : Responsive MOBILE Probleme sur navigateur largeur image & box carte -->
+<!--START ACTIVITY-->
+<div class="activity" id="activity">
+    <div class="activity-box-title">
+        <h2 class="activity-title">
+            Activités à Marseille
+        </h2>
+    </div>
+    
+    <div class="activity-list">
 
-<!--Start Activity-->
-        <div class="activity" id="activity">
-            <div class="activity-box-title">
-                <h2 class="activity-title">
-                    Activités à Marseille
-                </h2>
+        <!-- Box-1 = carte 1 -->
+        <div class="activity-display-box-1">
+            <div class="activity-card">
+                <a href="#">
+                    <div class="activity-card-content">
+                         <div class="activity-card-img-1-4">
+                            <img src="images\activites\1_xlarge\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                        </div>
+                         <div class="activity-card-description">
+                            <h4>
+                                Vieux Port
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+        <!-- Box-2 = carte 2&3 -->
+        <div class="activity-display-box-2">
+    
+            <!-- carte 2 -->
+            <div class="activity-card">
+                <a href="#">
+                    <div class="activity-card-content">
+                        <div class="activity-card-img-2">
+                            <img src="images\activites\1_xlarge\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                        </div>
+                        <div class="activity-card-description">
+                            <h4>
+                                Fort de Pomègues
+                            </h4>
+                        </div>
+                    </div>
+                </a>
             </div>
             
-            <div class="activity-list">
-                <!-- carte 1 -->
-                <div class="activity-card">
-                    <a href="#">
-                        <div class="activity-card-content">
-                            <div class="activity-card-img-big">
-                                <img src="images\activites\1_xlarge\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                            </div>
-                            <div class="activity-card-description">
-                                <h4>
-                                    Vieux Port
-                                </h4>
-                            </div>
+            <!-- carte3 -->
+            <div class="activity-card">
+                <a href="#">
+                    <div class="activity-card-content">
+                        <div class="activity-card-img-3">
+                             <img src="images\activites\1_xlarge\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles du frioul">
                         </div>
-                    </a>
-                </div>
-                <!-- carte 2 -->
-                <div class="activity-card">
-                    <a href="#">
-                        <div class="activity-card-content">
-                            <div class="activity-card-img">
-                                <img src="images\activites\1_xlarge\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                            </div>
-                            <div class="activity-card-description">
-                                <h4>
-                                    Fort de Pomègues
-                                </h4>
-                            </div>
+                        <div class="activity-card-description">
+                            <h4>
+                                îles du frioul
+                            </h4>
                         </div>
-                    </a>
-                </div>
-                <!-- carte 3 -->
-                <div class="activity-card">
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+        <!-- Box-3 = carte 4 -->
+        <div class="activity-display-box-3">
+            <div class="activity-card">
                     <a href="#">
                         <div class="activity-card-content">
-                            <div class="activity-card-img">
-                                <img src="images\activites\1_xlarge\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles du frioul">
-                            </div>
-                            <div class="activity-card-description">
-                                <h4>
-                                    îles du frioul
-                                </h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- carte 4 -->
-                <div class="activity-card">
-                    <a href="#">
-                        <div class="activity-card-content">
-                            <div class="activity-card-img-big">
+                            <div class="activity-card-img-1-4">
                                 <img src="images\activites\1_xlarge\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                             </div>
                             <div class="activity-card-description">
@@ -505,41 +518,48 @@
                             </div>
                         </div>
                     </a>
-                </div>
-                <!-- carte 5 -->
-                <div class="activity-card">
-                    <a href="#">
-                        <div class="activity-card-content">
-                            <div class="activity-card-img">
-                                <img src="images\activites\1_xlarge\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-De-La-Garde">
-                            </div>
-                            <div class="activity-card-description">
-                                <h4>
-                                    Notre-Dame-De-La-Garde
-                                </h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- carte 6 -->
-                <div class="activity-card">
-                    <a href="#">
-                        <div class="activity-card-content">
-                            <div class="activity-card-img">
-                                <img src="images\activites\1_xlarge\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                            </div>
-                            <div class="activity-card-description">
-                                <h4>
-                                    Parc Longchamp
-                                </h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
             </div>
         </div>
-<!--END Activity-->
+    
+        <!-- Box-4 = carte 5&6 -->
+        <div class="activity-display-box-4">
+    
+            <!-- carte 5 -->
+            <div class="activity-card">
+                <a href="#">
+                    <div class="activity-card-content">
+                        <div class="activity-card-img-5-6">
+                            <img src="images\activites\1_xlarge\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-De-La-Garde">
+                        </div>
+                        <div class="activity-card-description">
+                            <h4>
+                                Notre-Dame-De-La-Garde
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- carte 6 -->
+            <div class="activity-card">
+                <a href="#">
+                     <div class="activity-card-content">
+                         <div class="activity-card-img-5-6">
+                            <img src="images\activites\1_xlarge\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                        </div>
+                        <div class="activity-card-description">
+                            <h4>
+                                Parc Longchamp
+                            </h4>
+                         </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--END ACTIVITY-->
 
 
 
@@ -554,9 +574,9 @@
 
 
     </main>
-<!--END Main-->
+<!--END MAIN-->
 
-<!--Start Footer-->
+<!--START FOOTER-->
     <footer class="footer">
         <!-- Footer Box Global-->
         <div class="footer-box">
@@ -585,6 +605,7 @@
 
         </div>
     </footer>
-<!--END Footer-->
+<!--END FOOTER-->
 </body>
+<!-- Projet 2 OpenClassroom > Started 12/03/2022 | Finished xx/xx/2022 -->
 </html>

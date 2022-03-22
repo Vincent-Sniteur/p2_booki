@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*wildcard */
+                               /* WILCARD */
 * {
-  box-sizing: border-box; /* garder mesure de box*/
+  box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
 
+                               /* BODY */
+
+/* Margin du body */
 body {
 margin: 0;
 }
@@ -13,40 +16,44 @@ margin: 0;
 
                                /* NAVBAR */
 
-/*nav*/
+/*Global Navbar*/
 nav {
   display: flex;
-  align-items: center; /* pour centrer hauteur  */
-  justify-content: flex-end; /* mettre tout a droite */
-  flex-wrap: wrap; /* resonsive des lignes  */
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
-/* id : Logo */
+/* Gestion "Logo" ( petit ) Important : Gestion"Logo2" dans gestion Smartphone*/
 nav .logo {
   display: flex;
-  padding: 0 2%; /* padding gauche droite */
-  margin-right: auto; /* prendre toute la marge a droite automatiquement */
+  padding: 0 2%;
+  margin-right: auto;
 }
 
-/*div block des link nav*/
+/*Mise en "Flex" du block des liens*/
 nav .nav-block {
-  display: flex; /* parent des medias */
+  display: flex;
 }
 
-/* Class dans nav pour A*/
+/* Gestion des liens dans la NavBar*/
 nav .nav-link {
   font-weight: bold;
-  color: inherit; /* couleur du css hérité*/
-  text-decoration: none; /* sans décoration autre que celle du style*/
-  padding: 40px; /* padding global pour garder la box */
-  border-top: 4px solid transparent; /* pour empêcher déplacement texte hover*/ 
+  color: inherit;
+  text-decoration: none;
+  padding: 40px;
+  border-top: 4px solid transparent;
 }
 
+/* Hover lien de la NavBar */
 nav .nav-link:hover {
-  border-top: 4px solid #0065FC; /* ligne colour hover */
-  color: #0065FC; /* couleur en hover text */
+  border-top: 4px solid #0065FC;
+  color: #0065FC;
 }
 
+
+
+                                   /* MAIN */
 main {
   padding: 0 20px;
 }
@@ -63,7 +70,7 @@ main .search > i {
   font-weight: bold; 
   font-size: 20px;
   padding: 12px 20px;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0 0 10px;
   background-color: #F2F2F2;
 }
 
@@ -86,7 +93,7 @@ main .search-button {
   color: #ffffff;
   font-size: 15px;
   padding: 12px 20px;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 0 15px 15px 0;
   border: 1px solid transparent;
   background: #0065FC;
   cursor: pointer;
@@ -140,8 +147,8 @@ main .filter .fa-solid {
 }
 main .filter .filter-display:hover {
   cursor: pointer;
-  transform: scale(1.03);
   background-color: #F2F2F2;
+  transform: scale(1.03);
 }
 main .filter .filter-name {
   font-weight: bold;
@@ -173,7 +180,7 @@ main .info p {
 }
 
 
-/* couleur etoiles FA */
+/* Class pour Couleur Etoiles FA */
 .blue-star {
   color: #0065FC;
 }
@@ -288,7 +295,7 @@ main .hebergement-card a {
 /* gestion du P bas gauche de la box */
 .hebergement-plus {
   display: block;
-  margin: 20px 0px 0px 10px;
+  margin: 20px 0 0 10px;
   justify-content: flex-start;
   color: inherit;
   font-weight: bold;
@@ -394,7 +401,7 @@ main .popularity-card-description {
 }
 
 main .popularity-card-description h3 {
-  margin: 0px 10px 0px 10px;
+  margin: 0 10px 0 10px;
 }
 main .popularity-card-description p {
   margin: 3px 10px 50px 10px;
@@ -410,77 +417,73 @@ main .popularity-card-note {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TODO */
                     /* Activity */
 
 
 /* Gestion BOX global Activity */
 main .activity {
   border-radius: 20px;
-  flex-basis: 70%;
-  padding: 10px;
+  /* flex-basis: 100%; */
 }
 
 /* Gestion BOX LISTE Activity */
 main .activity-list {
   display: flex;
-  gap: 10px;
+  align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-
-/* Gestion de la carte */
+/* Gestion global des cartes*/
 main .activity-card {
-  /* display: block; */
+  display: flex;
   border-radius: 20px;
   box-shadow: 0 0 15px #2929292e;
   cursor: pointer;
   transition-duration: 0.1s;
-  border: 1px solid blue;
+  margin-top: 20px;
 }
-
 
 /* Gestion Hover de la carte */
 main .activity-card:hover {
   transform: scale(1.03);
 }
-
+  
 /* Gestion des A dans la carte */
 main .activity-card a {
   color: inherit;
   text-decoration: none;
 }
-/* Content = tout intérieur de la box */
-main .activity-card-content {
-  height: 100%;
-  border: 1px solid red;
-}
 
-/* Gestion div dans la box pour image*/
-main .activity-card-img {
-  height: 150px;
-  width: 250px;
-}
-main .activity-card-img-big {
-  height: 350px;
-  width: 250px;
-}
-
-/* Gestion de l'image dans la div */
-main .activity-card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 20px 20px 0 0;
-}
-main .activity-card-img-big img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 20px 20px 0 0;
-}
 /* Gestion de la h4 dans la box */
 main .activity-card-description h4 {
   margin: 10px;
@@ -488,9 +491,40 @@ main .activity-card-description h4 {
 
 
 
+/* Gestion Global des propriétés Image  */
+.activity-card img {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  object-position: center;
+}
 
+/* image carte 1 & 4 */
+.activity-card-img-1-4 img {
+  display: 	block;
+  height: 300px;
+  width: 250px;
+}
 
+/* image carte 2 */
+.activity-card-img-2 img {
+  display: 	block;
+  height: 150px;
+  width: 250px;
+}
 
+/* image carte 3 */
+.activity-card-img-3 img {
+  display: 	block;
+  height: 80px;
+  width: 250px;
+}
+
+/* image carte 5 & 6 */
+.activity-card-img-5-6 img {
+  display: 	block;
+  height: 120px;
+  width: 250px;
+}
 
 
 
@@ -644,16 +678,19 @@ main .hebergement-card {
 /* SMARTPHONE */
 @media only screen and (max-width: 768px) {
 
-/* LOGO */
-nav .logo { /*cache logo 1*/
+  /* Logo */
+/*Gestion Logo (petit) & NON Affichage*/
+nav .logo {
     display: none;
 }
 
-nav .logo2 {  /*affiche logo 2*/
+/*Gestion Logo2 & Affichage*/
+nav .logo2 {
     display: flex;
     width: auto;
     margin: auto;
 }
+
 
 /* NAVBAR */
 nav .nav-block {
@@ -680,14 +717,12 @@ main .research {
 
 main .search-mini {
     display: inline;
-    border-radius: 100px 0px 0px 10px;
+    border-radius: 100px 0 0 10px;
 }
 
 main .search {
     justify-content: center;
-    /* border: 1px solid red; */
     width: 100%;
-    /* overflow: auto; */
 }
 
 
@@ -710,11 +745,18 @@ main .result .popularity {
 
 
 
-
-
-
-
-
+/* ACTIVITY */
+/* gestion liste global activity */
+main .activity-list {
+  flex-direction: column;
+  display: flex;
+  /* border: 1px solid red; */
+}
+/* gestion img activity */
+main .activity-card img {
+  width: 100%;
+  height: 120px;
+}
 
 /* Footer mise en colum */
 footer .footer-box {
