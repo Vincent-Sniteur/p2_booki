@@ -252,7 +252,7 @@ main .hebergement-card {
   box-shadow: 0 0 15px #2929292e;
   transition-duration: 0.1s;
   cursor: pointer;
-  flex-basis: 30%;
+  flex-basis: 32%;
 }
 
 /* Gestion Hover de la carte */
@@ -324,12 +324,7 @@ main .popularity {
   background-color: #F2F2F2;
   flex-basis: 30%;
   padding: 10px;
-  align-items: flex-end;
-}
-
-/* Box du titre */
-main .popularity-box-title {
-/*  */
+  /* align-items: flex-end; */
 }
 
 /* Content box Titre popularity*/
@@ -342,7 +337,7 @@ main .popularity-title {
 main .popularity-list {
   display: flex;
   gap: 20px;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
