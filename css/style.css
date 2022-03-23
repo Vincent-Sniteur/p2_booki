@@ -14,6 +14,17 @@ max-width: 1200px;
 margin: auto;
 }
 
+                              /* GLOBAL CODE */
+
+/* Couleur Etoiles FA */
+.blue-star {
+  color: #0065FC;
+}
+.grey-star {
+  color: #F2F2F2;
+}
+
+
 
                                /* NAVBAR */
 
@@ -176,11 +187,14 @@ main .filter {
 
                                     /* INFO */
 
+/* Gestion zone Info */
 main .info {
   display: flex;
   align-items: center;
 }
-main .info .fa-solid {
+
+/* Gestion FA Icon */
+.info .fa-solid {
   color: #0065FC;
   display: flex;
   align-items: center;
@@ -191,30 +205,24 @@ main .info .fa-solid {
   border-radius: 50%;
 }
 
-main .info p {
-  margin-left: 1%;
+/* Gestion texte info */
+.info p {
+  margin-left: 10px;
 }
 
-
-/* Class pour Couleur Etoiles FA */
-.blue-star {
-  color: #0065FC;
-}
-.grey-star {
-  color: #F2F2F2;
-}
 
 
 
 
                    /* CONTAINER HEBERGEMENT / POPULAR */
 
+/* Gestion Global Hebergement & Popular */
 main .result {
   display: flex;
   gap: 20px;
 }
 
-                   /* CONTAINER HEBERGEMENT */
+                   /* HEBERGEMENT */
 
 
 /* Gestion BOX global Hebergement */
@@ -224,7 +232,16 @@ main #hebergement {
   flex-basis: 70%;
   padding: 10px;
 }
-/* Gestion BOX LISTE hebergement */
+
+/* Gestion Titre Hebergement */
+main .hebergement-title {
+  display: block;
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Gestion BLOCK LISTE Hebergement */
 main .hebergement-list {
   display: flex;
   gap: 10px;
@@ -232,19 +249,7 @@ main .hebergement-list {
   flex-wrap: wrap;
 }
 
-/* Box du titre */
-main .hebergement-box-title {
-  display: block;
-}
-
-/* Content box Titre Hebergement*/
-main .hebergement-title {
-  color: inherit;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* Gestion de la carte */
+/* Gestion des cartes */
 main .hebergement-card {
   background-color: white;
   padding: 5px;
@@ -255,19 +260,19 @@ main .hebergement-card {
   flex-basis: 32%;
 }
 
-/* Gestion Hover de la carte */
+/* Gestion Hover des cartes */
 main .hebergement-card:hover {
   transform: scale(1.03);
 }
 
-/* Gestion des A dans la carte */
+/* Gestion des A dans les cartes */
 main .hebergement-card a {
   color: inherit;
   text-decoration: none;
 }
 
-/* Gestion des IMG dans la carte */
-.hebergement-card-content-img {
+/* Gestion IMG des cartes */
+.hebergement-card-img {
   display: block;
   height: 120px;
   width: 100%;
@@ -278,7 +283,7 @@ main .hebergement-card a {
   object-position: center;
 }
 
-/* Gestion description dans la carte */
+/* Gestion description des cartes */
 .hebergement-card-description {
   display: flex;
   flex-direction: column;
@@ -286,22 +291,22 @@ main .hebergement-card a {
   flex-basis: 100%;
 }
 
-/* Gestion Titre h3 pour description box*/
+/* Gestion block Description TITRE */
 .hebergement-card-description h3 {
   margin: 3px 10px 0px 10px;
 }
 
-/* Gestion description box */
+/* Gestion block Description TEXTE */
 .hebergement-card-description p {
   margin: 3px 10px 5px 10px;
 }
 
-/* Gestion note box */
+/* Gestion Des Notes */
 .hebergement-card-note {
   margin: 3px 10px 5px 10px;
 }
 
-/* gestion du P bas gauche de la box */
+/* Gestion P "afficher plus" Hebergement */
 .hebergement-plus {
   display: block;
   margin: 20px 0 0 10px;
@@ -324,7 +329,6 @@ main .popularity {
   background-color: #F2F2F2;
   flex-basis: 30%;
   padding: 10px;
-  /* align-items: flex-end; */
 }
 
 /* Content box Titre popularity*/
