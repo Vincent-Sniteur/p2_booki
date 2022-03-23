@@ -8,7 +8,7 @@
 
                                /* BODY */
 
-/* Margin du body */
+/* Margin du body et taille de l'écran */
 body {
 max-width: 1200px;
 margin: auto;
@@ -33,12 +33,12 @@ nav .logo {
 }
 
 /*Mise en "Flex" du block des liens*/
-nav .nav-block {
+.nav-block {
   display: flex;
 }
 
 /* Gestion des liens dans la NavBar*/
-nav .nav-link {
+.nav-link {
   font-weight: bold;
   color: inherit;
   text-decoration: none;
@@ -47,7 +47,7 @@ nav .nav-link {
 }
 
 /* Hover lien de la NavBar */
-nav .nav-link:hover {
+.nav-link:hover {
   border-top: 4px solid #0065FC;
   color: #0065FC;
 }
@@ -55,19 +55,21 @@ nav .nav-link:hover {
 
 
                                    /* MAIN */
+/* Gestion Global du Main */
 main {
   padding: 0 20px;
 }
 
 
                                    /* RECHERCHE */
-
+/* Gestion block Recherche global */
 main .search {
   position: relative;
   display: flex;
 }
 
-main .search > i {
+/* Gestion icon FA "location-dot" */
+.search > i {
   font-weight: bold; 
   font-size: 20px;
   padding: 12px 20px;
@@ -75,21 +77,22 @@ main .search > i {
   background-color: #F2F2F2;
 }
 
-main input ::placeholder {
-  color: black;
-}
-main .search-block {
+/* Box Zone d'écriture recherche */
+.search .search-block {
   border: 2px solid #F2F2F2;
   height: 52px;
   width: 200px;
   font-weight: bold;
 }
 
-main .search-block:focus{
+/* Gestion couleur écriture du block */
+.search .search-block:focus{
   color: #0065FC;
+  outline: none;
 }
 
-main .search-button {
+/* Gestion bouton recherche */
+.search .search-button {
   font-weight: bold; 
   color: #ffffff;
   font-size: 15px;
@@ -98,10 +101,11 @@ main .search-button {
   border: 1px solid transparent;
   background: #0065FC;
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-main .search-button:hover {
+/* Gestion hover du bouton*/
+.search .search-button:hover {
   opacity: 1;
   transform: scale(1.03);
 }
@@ -188,13 +192,6 @@ main .info p {
 .grey-star {
   color: #F2F2F2;
 }
-
-
-
-
-
-
-
 
 
 
@@ -307,14 +304,6 @@ main .hebergement-card a {
 
 
 
-
-
-
-
-
-
-
-
                     /* CONTAINER POPULARITY */
 
 
@@ -414,46 +403,12 @@ main .popularity-card-note {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* TODO */
                     /* Activity */
 
 
 /* Gestion BOX global Activity */
 main #activity {
   border-radius: 20px;
-  border: 1px solid red;
 }
 
 /* Gestion BOX LISTE Activity */
@@ -529,54 +484,6 @@ main .activity-card-description h4 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                               /* FOOTER */
 /* Global footer gestion */
 footer {
@@ -628,16 +535,18 @@ footer a:hover {
 
 
 
-                               /*MEDIA RESPONSIVE*/
+                               /*MEDIA SCREEN RESPONSIVE*/
 
 /*PC*/
 @media only screen and (min-width: 992px) {
-nav .nav-block {
-  border: 1px solid green;
-}
+
+/* LOGO */
+/*cache logo 2*/
 nav .logo2 {
   display: none;
 }
+/* RESEARCH */
+/* cache FA logo */
 main .search-mini {
   display: none;
 }
@@ -647,20 +556,8 @@ main .search-mini {
 
 
 
-
-
-
-
-
-
-
-
-
 /*TABLETTE*/
 @media only screen and (max-width: 992px) {
-nav .nav-block {
-  border: 1px solid red;
-}
 
 /* LOGO */
 /*cache logo 2*/
@@ -674,42 +571,24 @@ main .search-mini {
   display: none;
 }
 
-
-
-/* Gestion des cartes > passage tablette > 2 cartes*/
+/* MAIN */
+/* Gestion des cartes > passage tablette en ligne*/
 main .hebergement-card {
   flex-basis: 40%;
 }
-
 }
 /* END TABLETTE */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /* SMARTPHONE */
 @media only screen and (max-width: 768px) {
 
-  /* Logo */
+/* Logo */
 /*Gestion Logo (petit) & NON Affichage*/
 nav .logo {
     display: none;
 }
-
 /*Gestion Logo2 & Affichage*/
 nav .logo2 {
     display: flex;
@@ -717,42 +596,55 @@ nav .logo2 {
     margin: auto;
 }
 
-
 /* NAVBAR */
+/* Gestion Block de la NavBar */
 nav .nav-block {
     width: 100%;
     text-align:center;
 }
-
+/* Gestion des lien dans la NavBar */
 nav .nav-link {
     width: 50%;
     justify-content: center;
     border-bottom: 4px solid #F2F2F2;
 }
-
+/* Hover gestion border du haut et du bas */
 nav .nav-link:hover {
-    border-top-color: transparent; /*cacher border du haut*/
-    border-bottom-color:#0065FC ; /*changer couleur de la border grise en bleu*/
+    border-top-color: transparent;
+    border-bottom-color:#0065FC ;
 }
 
 
 /* RESEARCH */
-main .research {
-    display: none;
-}
-
-main .search-mini {
-    display: inline;
-    border-radius: 100px 0 0 10px;
-}
-
+/* Gestion block Recherche global */
 main .search {
-    justify-content: center;
-    width: 100%;
+  justify-content: center;
+  zoom: 120%;
+}
+
+/* Gestion bouton recherche */
+.search .search-button {
+  border-radius: 15px 15px 15px 15px;
+}
+
+/* Box Zone d'écriture recherche */
+.search .search-block {
+  margin-right: -10px;
+  width: 70%;
+}
+
+/* Gestion texte "Rechercher" en version tablette & pc */
+.search .search-texte {
+  display: none;
+}
+
+/* Gestion icon FA "magnifying-glass" */
+.search .search-mini {
+    display: inline;
 }
 
 
-/* Main */
+/* MAIN */
 main .result {
   flex-direction: column;
 }
@@ -761,34 +653,29 @@ main #hebergement {
   flex-direction: column;
 }
 /* "Hebergement" mise en column */
-main #hebergement .hebergement-list {
+#hebergement .hebergement-list {
   flex-direction: column;
 }
 /* Changement ordre de priorité */
-main .result .popularity {
+.result .popularity {
   order: -1;
 }
 
 
 
 /* ACTIVITY */
-/* gestion liste global activity */
-main .activity-list {
+/* Gestion de la liste > Mise en Column et largeur d'écran */
+.activity-list div {
   flex-direction: column;
   display: flex;
-}
-/* Gestion largeur carte */
-main .activity-list div {
   width: 100%;
 }
-
-/* gestion carte activity */
-main .activity-card {
+/* Gestion carte en block*/
+.activity-card {
   display: block;
 }
-
-/* gestion img activity */
-main .activity-card img {
+/* Gestion intégration taille img*/
+.activity-card img {
   width: 100%;
   height: 120px;
 }
@@ -796,7 +683,7 @@ main .activity-card img {
 
 /* FOOTER */
 /* Footer mise en colum */
-footer .footer-box {
+.footer-box {
   flex-direction: column;
 }
 /* END SMARTPHONE */
