@@ -114,48 +114,59 @@ main .search {
 
                                     /* FILTER */
 
-/* Box Global Filter */
+/* Gestion Global Box Filter */
 main .filter {
   display: flex;
-  margin-top: 2%;
+  margin-top: 20px;
   flex-wrap: wrap;
 }
-/* Box Titre Filter */
-main .filter-title {
+
+/* Gestion Titre */
+.filter h2 {
   font-weight: bold;
 }
-/* Box Liste filtre */
-main .filter-list {
+
+/* Gestion Global Box LISTE des Filtres */
+.filter .filter-list {
   align-items: center;
   flex-wrap: wrap;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
-main .filter-display {
-  border: 3px solid #F2F2F2;
+/* Gestion des DIV dans la liste */
+.filter-list div {
+  border: 2px solid #F2F2F2;
   margin-left: 10px;
   display: flex;
   border-radius: 50px;
   align-items: center;
+  height: 50px;
 }
-main .filter .fa-solid {
+
+/* Gestion du Hover de chaque DIV de la liste */
+.filter-list div:hover {
+  cursor: pointer;
+  background-color: #F2F2F2;
+  transform: scale(1.03);
+}
+
+/* Gestion Icon FA de la liste */
+.filter-list .fa-solid {
   color: #0065FC;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #DEEBFF;
-  padding: 20px;
+  padding: 15px;
   border-radius: 50%;
   margin: -3px;
-  width: 48px;
+  font-size: 20px;
+  width: 50px;
 }
-main .filter .filter-display:hover {
-  cursor: pointer;
-  background-color: #F2F2F2;
-  transform: scale(1.03);
-}
-main .filter .filter-name {
+
+/* Gestion des nom de chaque filtre */
+.filter-list p {
   font-weight: bold;
   padding: 0 10px;
 }
@@ -576,6 +587,18 @@ main .search-mini {
 main .hebergement-card {
   flex-basis: 40%;
 }
+
+
+/* ACTIVITY */
+/* Gestion block 4 > mise en flex et gap pour mise en page */
+.activity-display-box-4 {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+
 }
 /* END TABLETTE */
 
