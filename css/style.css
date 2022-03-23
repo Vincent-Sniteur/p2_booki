@@ -10,7 +10,8 @@
 
 /* Margin du body */
 body {
-margin: 0;
+max-width: 1200px;
+margin: auto;
 }
 
 
@@ -209,7 +210,7 @@ main .result {
 
 
 /* Gestion BOX global Hebergement */
-main .hebergement {
+main #hebergement {
   border-radius: 20px;
   background-color: #F2F2F2;
   flex-basis: 70%;
@@ -450,9 +451,9 @@ main .popularity-card-note {
 
 
 /* Gestion BOX global Activity */
-main .activity {
+main #activity {
   border-radius: 20px;
-  /* flex-basis: 100%; */
+  border: 1px solid red;
 }
 
 /* Gestion BOX LISTE Activity */
@@ -645,6 +646,16 @@ main .search-mini {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*TABLETTE*/
 @media only screen and (max-width: 992px) {
 nav .nav-block {
@@ -672,6 +683,21 @@ main .hebergement-card {
 
 }
 /* END TABLETTE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -730,12 +756,12 @@ main .search {
 main .result {
   flex-direction: column;
 }
-main .hebergement {
+main #hebergement {
   background-color: white;
   flex-direction: column;
 }
 /* "Hebergement" mise en column */
-main .hebergement .hebergement-list {
+main #hebergement .hebergement-list {
   flex-direction: column;
 }
 /* Changement ordre de priorité */
@@ -750,14 +776,25 @@ main .result .popularity {
 main .activity-list {
   flex-direction: column;
   display: flex;
-  /* border: 1px solid red; */
 }
+/* Gestion largeur carte */
+main .activity-list div {
+  width: 100%;
+}
+
+/* gestion carte activity */
+main .activity-card {
+  display: block;
+}
+
 /* gestion img activity */
 main .activity-card img {
   width: 100%;
   height: 120px;
 }
 
+
+/* FOOTER */
 /* Footer mise en colum */
 footer .footer-box {
   flex-direction: column;
