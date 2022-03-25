@@ -327,7 +327,6 @@ main .popularity {
   background-color: #F2F2F2;
   flex-basis: 30%;
   padding: 10px;
-  height: fit-content;
 }
 
 /* Content box Titre popularity*/
@@ -340,7 +339,6 @@ main .popularity-title {
 main .popularity-list {
   display: flex;
   gap: 20px;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
