@@ -63,18 +63,17 @@ nav .logo {
 
 
 
-                                   /* MAIN */
-/* Gestion Global du Main */
-main {
+                                   /* TITRE */
+main .title {
   padding: 0 20px;
 }
-
 
                                    /* RECHERCHE */
 /* Gestion block Recherche global */
 main .search {
   position: relative;
   display: flex;
+  padding: 0 20px;
 }
 
 /* Gestion icon FA "location-dot" */
@@ -82,7 +81,7 @@ main .search {
   font-weight: bold; 
   font-size: 21px;
   padding: 15px 15px 0 17px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 15px 0 0 15px;
   background-color: #F2F2F2;
 }
 
@@ -128,6 +127,7 @@ main .filter {
   display: flex;
   margin-top: 20px;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 /* Gestion Titre */
@@ -189,6 +189,7 @@ main .filter {
 main .info {
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }
 
 /* Gestion FA Icon */
@@ -419,6 +420,7 @@ main .popularity-card-note {
 /* Gestion BOX global Activity */
 main #activity {
   border-radius: 20px;
+  padding: 10px;
 }
 
 /* Gestion BOX LISTE Activity */
@@ -681,8 +683,8 @@ main #hebergement {
 /* Changement ordre de priorité */
 .result .popularity {
   order: -1;
+  border-radius: 0;
 }
-
 
 
 /* ACTIVITY */
