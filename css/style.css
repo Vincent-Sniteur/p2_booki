@@ -24,8 +24,6 @@ margin: auto;
   color: #F2F2F2;
 }
 
-
-
                                /* NAVBAR */
 
 /*Global Navbar*/
@@ -82,8 +80,8 @@ main .search {
 /* Gestion icon FA "location-dot" */
 .search > i {
   font-weight: bold; 
-  font-size: 20px;
-  padding: 12px 20px;
+  font-size: 21px;
+  padding: 15px 15px 0 17px;
   border-radius: 10px 0 0 10px;
   background-color: #F2F2F2;
 }
