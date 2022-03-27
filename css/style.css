@@ -37,7 +37,7 @@ nav .logo {
 }
 
 /* Gestion Liens NavBar */
-.nav-link {
+.nav-block a {
   font-weight: bold;
   color: inherit;
   text-decoration: none;
@@ -46,7 +46,7 @@ nav .logo {
 }
 
 /* Hover Liens NavBar */
-.nav-link:hover {
+.nav-block a:hover {
   border-top: 4px solid #0065FC;
   color: #0065FC;
 }
@@ -107,11 +107,9 @@ main .search {
   transform: scale(1.03);
 }
 
-
-
                                     /* FILTER */
 
-/* Gestion Global Box Filter */
+/* Gestion Block Filtres */
 main .filter {
   display: flex;
   margin-top: 20px;
@@ -119,20 +117,20 @@ main .filter {
   padding: 0 20px;
 }
 
-/* Gestion Titre */
+/* Filtres H2 */
 .filter h2 {
   font-weight: bold;
 }
 
-/* Gestion Global Box LISTE des Filtres */
-.filter .filter-list {
+/* Gestion Block liste de filtres */
+.filter-list {
   align-items: center;
   flex-wrap: wrap;
   display: flex;
   gap: 10px;
 }
 
-/* Gestion des DIV dans la liste */
+/* DIV dans la liste de filtres */
 .filter-list div {
   border: 2px solid #F2F2F2;
   margin-left: 10px;
@@ -142,18 +140,17 @@ main .filter {
   height: 50px;
 }
 
-/* Gestion du Hover de chaque DIV de la liste */
+/* Hover DIV liste de filtres  */
 .filter-list div:hover {
   cursor: pointer;
   background-color: #F2F2F2;
   transform: scale(1.03);
 }
 
-/* Gestion Icon FA de la liste */
+/* Icon FA liste de filtres */
 .filter-list .fa-solid {
   color: #0065FC;
   display: flex;
-  align-items: center;
   justify-content: center;
   background-color: #DEEBFF;
   padding: 15px;
@@ -163,7 +160,7 @@ main .filter {
   width: 50px;
 }
 
-/* Gestion des "nom" de chaque filtre */
+/* Nom des filtres */
 .filter-list p {
   font-weight: bold;
   padding: 0 10px;
@@ -174,7 +171,7 @@ main .filter {
 
                                     /* RESEARCH RESULT MESSAGE */
 
-/* Gestion zone Info */
+/* Gestion result block */
 main .search-message {
   display: flex;
   align-items: center;
@@ -193,13 +190,10 @@ main .search-message {
   border-radius: 50%;
 }
 
-/* Gestion texte info */
+/* Texte result */
 .search-message p {
   margin-left: 10px;
 }
-
-
-
 
 
                    /* CONTAINER HEBERGEMENT / POPULAR */
@@ -210,42 +204,42 @@ main .result {
   gap: 20px;
 }
 
-/* Couleur Etoiles FA */
+/* Couleur Etoiles FA Notation */
 .blue-star {
   color: #0065FC;
 }
 .grey-star {
   color: #F2F2F2;
 }
+
                    /* HEBERGEMENT */
 
-
-/* Gestion BOX global Hebergement */
-main #hebergement {
+/* Block Global Hebergement */
+.result #hebergement {
   border-radius: 20px;
   background-color: #F2F2F2;
   flex-basis: 70%;
   padding: 10px;
 }
 
-/* Gestion Titre Hebergement */
-main .hebergement-title {
+/* Titre Hebergement */
+#hebergement h2 {
   display: block;
   color: inherit;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* Gestion BLOCK LISTE Hebergement */
-main .hebergement-list {
+/* BLOCK LISTE Hebergement */
+#hebergement .hebergement-list {
   display: flex;
   gap: 10px;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-/* Gestion des cartes */
-main .hebergement-card {
+/* Affichage Carte Hebergement */
+.hebergement-card {
   background-color: white;
   padding: 5px;
   border-radius: 20px;
@@ -256,18 +250,18 @@ main .hebergement-card {
 }
 
 /* Gestion Hover des cartes */
-main .hebergement-card:hover {
+.hebergement-card:hover {
   transform: scale(1.03);
 }
 
 /* Gestion des A dans les cartes */
-main .hebergement-card a {
+.hebergement-card a {
   color: inherit;
   text-decoration: none;
 }
 
 /* Gestion IMG des cartes */
-.hebergement-card-img {
+.hebergement-card img {
   display: block;
   height: 120px;
   width: 100%;
@@ -286,22 +280,22 @@ main .hebergement-card a {
   flex-basis: 100%;
 }
 
-/* Gestion block Description TITRE */
+/* Description TITRE */
 .hebergement-card-description h3 {
   margin: 3px 10px 0px 10px;
 }
 
-/* Gestion block Description TEXTE */
+/* Description TEXTE */
 .hebergement-card-description p {
   margin: 3px 10px 5px 10px;
 }
 
-/* Gestion Des Notes */
+/* Description NOTE */
 .hebergement-card-note {
   margin: 3px 10px 5px 10px;
 }
 
-/* Gestion P "afficher plus" Hebergement */
+/* Texte "afficher plus" Hebergement */
 .hebergement-plus {
   display: block;
   margin: 20px 0 0 10px;
@@ -310,9 +304,6 @@ main .hebergement-card a {
   font-weight: bold;
   text-decoration: none;
 }
-
-
-
 
 
                     /* CONTAINER POPULARITY */
@@ -621,13 +612,13 @@ nav .nav-block {
     text-align:center;
 }
 /* Gestion des lien dans la NavBar */
-nav .nav-link {
+nav .nav-block a {
     width: 50%;
     justify-content: center;
     border-bottom: 4px solid #F2F2F2;
 }
 /* Hover gestion border du haut et du bas */
-nav .nav-link:hover {
+nav .nav-block a:hover {
     border-top-color: transparent;
     border-bottom-color:#0065FC ;
 }
