@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-                               /* WILCARD */
+
+                                        /* WILCARD */
 * {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
 
-                               /* BODY */
 
+                                        /* BODY */
 /* Margin du body et taille de l'écran */
 body {
   max-width: 1200px;
   margin: auto;
 }
 
-                               /* NAVBAR */
 
+                                        /* NAVBAR */
 /* Global Navbar */
 nav {
   display: flex;
@@ -52,12 +53,13 @@ nav .logo {
 }
 
 
-                                   /* HEAD */
+                                        /* HEAD */
 main .head-title {
   padding: 0 20px;
 }
 
-                                   /* SEARCH FORM */
+
+                                        /* SEARCH FORM */
 /* Gestion form recherche */
 main .search {
   display: flex;
@@ -107,19 +109,14 @@ main .search {
   transform: scale(1.03);
 }
 
-                                    /* FILTER */
 
+                                        /* FILTER */
 /* Gestion Block Filtres */
 main .filter {
   display: flex;
   margin-top: 20px;
   flex-wrap: wrap;
   padding: 0 20px;
-}
-
-/* Filtres H2 */
-.filter h2 {
-  font-weight: bold;
 }
 
 /* Gestion Block liste de filtres */
@@ -167,10 +164,7 @@ main .filter {
 }
 
 
-
-
-                                    /* RESEARCH RESULT MESSAGE */
-
+                                        /* RESEARCH RESULT MESSAGE */
 /* Gestion result block */
 main .search-message {
   display: flex;
@@ -196,8 +190,7 @@ main .search-message {
 }
 
 
-                   /* CONTAINER HEBERGEMENT / POPULAR */
-
+                                        /* CONTAINER HEBERGEMENT / POPULAR */
 /* Gestion Global Hebergement & Popular */
 main .result {
   display: flex;
@@ -212,8 +205,8 @@ main .result {
   color: #F2F2F2;
 }
 
-                   /* HEBERGEMENT */
 
+                                        /* HEBERGEMENT */
 /* Block Global Hebergement */
 .result #hebergement {
   border-radius: 20px;
@@ -249,18 +242,18 @@ main .result {
   flex-basis: 32%;
 }
 
-/* Gestion Hover des cartes */
+/* Hover > Cartes Hebergement */
 .hebergement-card:hover {
   transform: scale(1.03);
 }
 
-/* Gestion des A dans les cartes */
+/* A > Carte Hebergements */
 .hebergement-card a {
   color: inherit;
   text-decoration: none;
 }
 
-/* Gestion IMG des cartes */
+/* Gestion IMG des Cartes Hebergement */
 .hebergement-card img {
   display: block;
   height: 120px;
@@ -272,7 +265,7 @@ main .result {
   object-position: center;
 }
 
-/* Gestion description des cartes */
+/* Gestion description des Cartes Hebergement */
 .hebergement-card-description {
   display: flex;
   flex-direction: column;
@@ -280,17 +273,17 @@ main .result {
   flex-basis: 100%;
 }
 
-/* Description TITRE */
+/* Description TITRE Carte Hebergement*/
 .hebergement-card-description h3 {
   margin: 3px 10px 0px 10px;
 }
 
-/* Description TEXTE */
+/* Description TEXTE Carte Hebergement*/
 .hebergement-card-description p {
   margin: 3px 10px 5px 10px;
 }
 
-/* Description NOTE */
+/* Description NOTE Carte Hebergement*/
 .hebergement-card-note {
   margin: 3px 10px 5px 10px;
 }
@@ -306,11 +299,9 @@ main .result {
 }
 
 
-                    /* CONTAINER POPULARITY */
-
-
-/* Gestion BOX global Populaire */
-main .popularity {
+                                        /* POPULARITY */
+/* Block global Popularity */
+main #popularity {
   display: flex;
   border-radius: 20px;
   background-color: #F2F2F2;
@@ -319,14 +310,14 @@ main .popularity {
   padding: 10px;
 }
 
-/* Content box Titre popularity*/
-main .popularity-title {
+/* Titre Popularity + FA Icon */
+#popularity h2 {
   display: flex;
   justify-content: space-between;
 }
 
-/* Gestion BOX LISTE popularity */
-main .popularity-list {
+/* Block LISTE popularity */
+.popularity-list {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -334,8 +325,8 @@ main .popularity-list {
   justify-content: space-evenly;
 }
 
-/* Gestion de la carte */
-main .popularity-card {
+/* Affichage Carte Popularity */
+.popularity-card {
   background-color: white;
   padding: 5px;
   border-radius: 20px;
@@ -344,34 +335,35 @@ main .popularity-card {
   transition-duration: 0.1s;
 }
 
-/* Gestion Hover de la carte */
-main .popularity-card:hover {
+/* Hover > Carte Popularity */
+.popularity-card:hover {
   transform: scale(1.03);
 }
 
-/* Gestion des A dans la carte */
-main .popularity-card a {
+/* A > Carte Popularity */
+.popularity-card a {
   color: inherit;
   text-decoration: none;
 }
-/* Content = tout intérieur de la box */
-main .popularity-card-content {
+
+/* Interne Global Carte Popularity */
+.popularity-card-content {
   display: flex;
   align-items: stretch;
   height: 100%;
   overflow: auto;
 }
 
-/* Gestion div dans la box pour image*/
-main .popularity-card-img {
+/* Block pour image Carte Popularity*/
+.popularity-card-img {
   border-radius: 20px 0 0 20px;
   position: relative;
   min-width: 40%;
   max-width: 40%;
 }
 
-/* Gestion de l'image dans la div */
-main .popularity-card-content img {
+/* Option Image Carte Popularity */
+.popularity-card-content img {
   border-radius: 20px 0 0 20px;
   position: absolute;
   width: 100%;
@@ -380,46 +372,47 @@ main .popularity-card-content img {
   object-position: center;
 }
 
-/* Gestion de la box dans la box */
-main .popularity-card-description {
+/* Description des Cartes Popularity */
+.popularity-card-description {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   flex-basis: 100%;
 }
 
-main .popularity-card-description h3 {
+/* Description TITRE Carte Popularity*/
+.popularity-card-description h3 {
   margin: 0 10px 0 10px;
 }
-main .popularity-card-description p {
+
+/* Description TEXTE Carte Popularity*/
+.popularity-card-description p {
   margin: 3px 10px 50px 10px;
 }
 
-main .popularity-card-note {
+/* Description NOTE Carte Popularity*/
+.popularity-card-note {
   margin-left: 10px;
 }
 
 
-
-                    /* Activity */
-
-
-/* Gestion BOX global Activity */
+                                        /* ACTIVITY */
+/* Block Global Activity */
 main #activity {
   border-radius: 20px;
   padding: 10px;
 }
 
-/* Gestion BOX LISTE Activity */
-main .activity-list {
+/* Block LISTE Activity */
+#activity .activity-list {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-/* Gestion global des cartes*/
-main .activity-card {
+/* Affichage Carte Activity*/
+.activity-card {
   display: flex;
   border-radius: 20px;
   box-shadow: 0 0 15px #2929292e;
@@ -428,53 +421,51 @@ main .activity-card {
   margin-top: 20px;
 }
 
-/* Gestion Hover de la carte */
-main .activity-card:hover {
+/* Hover > Cartes Activity */
+.activity-card:hover {
   transform: scale(1.03);
 }
   
-/* Gestion des A dans la carte */
-main .activity-card a {
+/* A > Cartes Activity */
+.activity-card a {
   color: inherit;
   text-decoration: none;
 }
 
-/* Gestion de la h4 dans la box */
-main .activity-card-description h4 {
+/* Description TITRE Cartes Activity */
+.activity-card-description h4 {
   margin: 10px;
 }
 
-
-
-/* Gestion Global des propriétés Image  */
+/* Option Image Carte Activity ( Propriété ) */
 .activity-card img {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
   object-position: center;
 }
 
-/* image carte 1 & 4 */
+/* Option Image Carte Activity 1 & 4 */
 .activity-card-img-1-4 img {
   display: 	block;
   height: 300px;
   width: 250px;
 }
 
-/* image carte 2 */
+/* Option Image Carte Activity 2 */
 .activity-card-img-2 img {
   display: 	block;
   height: 150px;
   width: 250px;
 }
 
-/* image carte 3 */
+/* Option Image Carte Activity 3 */
 .activity-card-img-3 img {
   display: 	block;
   height: 80px;
   width: 250px;
 }
 
-/* image carte 5 & 6 */
+/* Option Image Carte Activity 5 & 6 */
 .activity-card-img-5-6 img {
   display: 	block;
   height: 120px;
@@ -482,8 +473,7 @@ main .activity-card-description h4 {
 }
 
 
-
-                              /* FOOTER */
+                                        /* FOOTER */
 /* Global Footer */
 footer {
   display: block;
@@ -491,25 +481,25 @@ footer {
   background-color: #F2F2F2;
 }
 
-/* Hover des liens */
+/* Hover liens Footer */
 footer a:hover {
   cursor: pointer;
 }
 
-/* Gestion Box Global */
+/* Block Footer Option */
 .footer-box {
   display: flex;
   padding: 0 20px;
 }
 
-/* Gestion des colonnes div */
+/* Gestion Footer Des 3 div spécifique */
 .footer-box div {
   display: block;
   width: 100%;
   padding: 10px 10px;
 }
 
-/* Gestion lien */
+/* Gestion lien Footer */
 .footer-box a {
   display: block;
   margin: 10px 0;
@@ -518,87 +508,61 @@ footer a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-                               /*MEDIA SCREEN RESPONSIVE*/
-
-/*PC*/
+                                        /*MEDIA SCREEN RESPONSIVE PC*/
 @media only screen and (min-width: 992px) {
-
 /* LOGO */
-/*cache logo 2*/
+/*Non affichage logo2*/
 nav .logo2 {
   display: none;
 }
 
 /* SEARCH FORM */
-/* cache FA logo */
+/* Non affichage FA "fa-magnifying-glass" */
 main #search-mini {
   display: none;
 }
-
-
-
-
 }
-/* END PC*/
 
 
-
-
-/*TABLETTE*/
+                                        /*MEDIA SCREEN RESPONSIVE TABLETTE*/
 @media only screen and (max-width: 992px) {
-
 /* LOGO */
-/*cache logo 2*/
+/*Non affichage logo2*/
 nav .logo2 {
   display: none;
 }
 
 /* SEARCH FORM */
-/* cache FA logo */
+/* Non affichage FA "fa-magnifying-glass"*/
 main #search-mini {
   display: none;
 }
 
 /* MAIN */
-/* Gestion des cartes > passage tablette en ligne*/
-main .hebergement-card {
+/* Gestion des cartes > Passage en affiche double*/
+#hebergement .hebergement-card {
   flex-basis: 40%;
 }
 
 
 /* ACTIVITY */
-/* Gestion block 4 > mise en flex et gap pour mise en page */
+/* Block 4 > Mise en page 2 Cartes en ligne*/
 .activity-display-box-4 {
   display: flex;
   gap: 20px;
 }
-
-
-
-
 }
-/* END TABLETTE */
 
 
-
-/* SMARTPHONE */
+                                        /*MEDIA SCREEN RESPONSIVE SMARTPHONE */
 @media only screen and (max-width: 768px) {
-
-/* Logo */
-/*Gestion Logo (petit) & NON Affichage*/
+/* LOGO */
+/*Non affichage logo (petit)*/
 nav .logo {
     display: none;
 }
-/*Gestion Logo2 & Affichage*/
+
+/*Option + affichage logo2*/
 nav .logo2 {
     display: flex;
     width: auto;
@@ -606,79 +570,90 @@ nav .logo2 {
 }
 
 /* NAVBAR */
-/* Gestion Block de la NavBar */
-nav .nav-block {
+/* Block NavBar */
+.nav-block {
     width: 100%;
     text-align:center;
 }
-/* Gestion des lien dans la NavBar */
-nav .nav-block a {
+
+/* Gestion Liens NavBar */
+.nav-block a {
     width: 50%;
     justify-content: center;
     border-bottom: 4px solid #F2F2F2;
 }
-/* Hover gestion border du haut et du bas */
-nav .nav-block a:hover {
+
+/* Hover > Border Haut & Bas */
+.nav-block a:hover {
     border-top-color: transparent;
     border-bottom-color:#0065FC ;
 }
 
 
 /* SEARCH FORM */
-/* Gestion block Recherche global */
+/* Gestion Form recherche */
 main .search {
   justify-content: center;
   zoom: 120%;
 }
-/* Gestion bouton recherche */
+
+/* Bouton Recherche */
 .search > button {
   border-radius: 15px 15px 15px 15px;
 }
-/* Box Zone d'écriture recherche */
+
+/* Input Gestion */
 .search > input {
   margin-right: -10px;
   width: 70%;
 }
-/* Gestion texte "Rechercher" en version tablette & pc */
+
+/* Texte "Rechercher" Non afficher */
 .search #search-texte {
   display: none;
 }
-/* Gestion icon FA "fa-magnifying-glass" */
+
+/* Affichage icon FA "fa-magnifying-glass" */
 .search  #search-mini {
     display: inline;
 }
 
 
 /* MAIN */
+/* Gestion Global Hebergement & Popular */
 main .result {
   flex-direction: column;
 }
+
+/* Block Global Hebergement */
 main #hebergement {
-  background-color: white;
-  flex-direction: column;
+  background-color: white !important;
 }
-/* "Hebergement" mise en column */
+
+/* BLOCK LISTE Hebergement > mise en column */
 #hebergement .hebergement-list {
   flex-direction: column;
 }
-/* Changement ordre de priorité */
-.result .popularity {
+
+/* Change Ordre de priorité Popularity */
+.result #popularity {
   order: -1;
-  border-radius: 0;
 }
 
 
 /* ACTIVITY */
-/* Gestion de la liste > Mise en Column et largeur d'écran */
+/* Block LISTE Activity > Div Mise en Column et largeur d'écran */
 .activity-list div {
   flex-direction: column;
   display: flex;
   width: 100%;
 }
-/* Gestion carte en block*/
+
+/* Option Carte Activity */
 .activity-card {
   display: block;
 }
+
 /* Gestion intégration taille img*/
 .activity-card img {
   width: 100%;
@@ -687,7 +662,7 @@ main #hebergement {
 
 
 /* FOOTER */
-/* Footer mise en colum */
+/* Footer Block > mise en colum */
 .footer-box {
   flex-direction: column;
 }
