@@ -313,7 +313,7 @@ main #popularity {
 /* Titre Popularity + FA Icon */
 #popularity h2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /* Block LISTE popularity */
