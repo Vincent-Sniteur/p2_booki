@@ -590,7 +590,7 @@ nav .logo2 {
 /* Gestion Form recherche */
 main .search {
   justify-content: center;
-  zoom: 120%;
+  transform: scale(1.1);
 }
 
 /* Bouton Recherche */
