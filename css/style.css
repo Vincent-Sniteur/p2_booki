@@ -54,8 +54,15 @@ nav .logo {
 
 
                                         /* HEAD */
-main .head-title {
+/* Block Titre */ 
+.head-title {
   padding: 0 20px;
+}
+
+/* Gestion H1 titre */
+.head-title h1 { 
+  font-size: 30px;
+  font-weight: 700;
 }
 
 
@@ -200,12 +207,17 @@ main .result {
 /* Couleur Etoiles FA Notation */
 .blue-star {
   color: #0065FC;
+  font-size: 14px;
 }
 .grey-star {
   color: #F2F2F2;
+  font-size: 14px;
 }
 
-
+/* Bold € & Petit prix hébergement */
+.result .bold {
+  font-weight: bold;
+}
                                         /* HEBERGEMENT */
 /* Block Global Hebergement */
 .result #hebergement {
@@ -296,6 +308,7 @@ main .result {
   color: inherit;
   font-weight: bold;
   text-decoration: none;
+  font-weight: 700;
 }
 
 
@@ -399,82 +412,121 @@ main #popularity {
                                         /* ACTIVITY */
 /* Block Global Activity */
 main #activity {
+  display: flex;
   margin: 20px;
-}
-
-/* Block LISTE Activity */
-#activity .activity-list {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
+  padding-bottom: 40px;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Affichage Carte Activity*/
-.activity-list article {
-  display: flex;
-  border-radius: 20px;
+/* Gestion H2 " Activités à Marseille */
+#activity h2 {
+  width: 100%;
+}
+
+/* Affichage Carte Activity > Article*/
+#activity article {
+  height: 410px;
   box-shadow: 0 0 15px #2929292e;
-  cursor: pointer;
-  transition-duration: 0.1s;
-  margin-top: 20px;
+  border-radius: 20px;
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.2s;
 }
 
 /* Hover > Cartes Activity */
-.activity-list article:hover {
+#activity article:hover {
   transform: scale(1.03);
 }
 
-/* Description TITRE Cartes Activity */
-.activity-list h3 {
-  font-size: 15px;
-  margin: 3px 10px 3px 10px;
+/* Option div "double image" */
+#activity div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
 }
 
-/* Option Image Carte Activity ( Propriété ) */
-.activity-list article img {
-  border-radius: 20px 20px 0 0;
+/* Gestion Div & Article taille */
+#activity > div, #activity > article{
+  width: 23%;
+}
+
+/* Gestion block Lien dans les articles */
+#activity a {
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* Option H3 titre activité */
+#activity h3{
+  font-weight: 800;
+  font-size: 14px;
+  padding: 0px 10px;
+}
+
+/* Gestion image Global */
+#activity img{
+  width: 100%;
+  height: 360px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   object-fit: cover;
   object-position: center;
 }
 
-/* Option Image Carte Activity 1 & 4 */
-.activity-card-img-1-4 {
-  display: 	block;
-  height: 300px;
-  width: 250px;
+/* Gestion Card "double" Taille */
+/* Card 2*/
+#activity div:nth-of-type(1) article:nth-of-type(1){
+  height: 220px;
+}
+/* Image Card 2 */
+#activity div:nth-of-type(1) article span img:nth-of-type(1){
+  height: 170px;
 }
 
-/* Option Image Carte Activity 2 */
-.activity-card-img-2 {
-  display: 	block;
+/* Card 3*/
+#activity div:nth-of-type(1) article:nth-of-type(2){
   height: 150px;
-  width: 250px;
 }
 
-/* Option Image Carte Activity 3 */
-.activity-card-img-3 {
-  display: 	block;
-  height: 80px;
-  width: 250px;
+/* Image Card 3 */
+#activity div:nth-of-type(1) article:nth-of-type(2) span img{
+  height: 100px;
 }
 
-/* Option Image Carte Activity 5 & 6 */
-.activity-card-img-5-6 {
-  display: 	block;
-  height: 120px;
-  width: 250px;
+/* Card 5 */
+#activity div:nth-of-type(2) article:nth-of-type(1){
+  height: 185px;
 }
+/* Image Card 5 */
+#activity div:nth-of-type(2) article:nth-of-type(1) span img{
+  height: 140px;
+}
+
+/* Card 6 */
+#activity div:nth-of-type(2) article:nth-of-type(2){
+  height: 185px;
+}
+/* Image Card 6 */
+#activity div:nth-of-type(2) article:nth-of-type(2) span img{
+  height: 140px;
+}
+
+
 
 
                                         /* FOOTER */
 /* Global Footer */
 footer {
-  display: block;
+  display: flex;
   margin-top: 20px;
   background-color: #F2F2F2;
+  padding: 10px 10px;
 }
 
 /* Hover liens Footer */
@@ -482,21 +534,15 @@ footer a:hover {
   cursor: pointer;
 }
 
-/* Block Footer Option */
-.footer-box {
-  display: flex;
-  padding: 0 20px;
-}
-
 /* Gestion Footer Des 3 div spécifique */
-.footer-box div {
+footer div {
   display: block;
   width: 100%;
   padding: 10px 10px;
 }
 
 /* Gestion lien Footer */
-.footer-box a {
+footer a {
   display: block;
   margin: 10px 0;
   color: inherit;
@@ -542,10 +588,34 @@ main #search-mini {
 
 
 /* ACTIVITY */
-/* Block 4 > Mise en page 2 Cartes en ligne*/
-.activity-display-box-4 {
-  display: flex;
-  gap: 20px;
+/* Block Global Activity */
+#activity{
+  row-gap: 30px;
+}
+
+/* Gestion Carte Activity > Article */
+#activity article{
+  width: 100%;
+  max-height: 200px;
+  min-height: 200px;
+  width: 49%;
+  order: 1;
+}
+
+/* Gestion des DIV Activity "double img" */
+#activity div{
+  order: 2;
+  flex-basis: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Gestion image Global Redimension Tablette*/
+#activity img{
+  max-height: 150px;
+  min-height: 150px;
+  object-fit: cover;
+  object-position: center;
 }
 }
 
@@ -639,28 +709,19 @@ main #hebergement {
 
 
 /* ACTIVITY */
-/* Block LISTE Activity > Div Mise en Column et largeur d'écran */
-.activity-list div {
+/* Gestion Carte Activity > Article > 100% largeur */
+#activity article {
+  width: 100%;
+}
+
+/* Gestion des DIV Activity "double img" > Column */
+#activity div {
   flex-direction: column;
-  display: flex;
-  width: 100%;
 }
-
-/* Option Carte Activity */
-.activity-list article {
-  display: block;
-}
-
-/* Gestion intégration taille img*/
-.activity-list article img {
-  width: 100%;
-  height: 120px;
-}
-
 
 /* FOOTER */
 /* Footer Block > mise en colum */
-.footer-box {
+footer {
   flex-direction: column;
 }
 /* END SMARTPHONE */
