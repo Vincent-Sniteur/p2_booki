@@ -287,17 +287,17 @@ main .result {
 
 /* Description TITRE Carte Hebergement*/
 .hebergement-card-description h3 {
-  margin: 3px 10px 0px 10px;
+  margin: 3px 10px 0px;
 }
 
 /* Description TEXTE Carte Hebergement*/
 .hebergement-card-description p {
-  margin: 3px 10px 5px 10px;
+  margin: 3px 10px 5px;
 }
 
 /* Description NOTE Carte Hebergement*/
 .hebergement-card-note {
-  margin: 3px 10px 5px 10px;
+  margin: 3px 10px 5px;
 }
 
 /* Texte "afficher plus" Hebergement */
@@ -395,12 +395,12 @@ main #popularity {
 
 /* Description TITRE Carte Popularity*/
 .popularity-card-description h3 {
-  margin: 0 10px 0 10px;
+  margin: 0 10px;
 }
 
 /* Description TEXTE Carte Popularity*/
 .popularity-card-description p {
-  margin: 3px 10px 50px 10px;
+  margin: 3px 10px 50px;
 }
 
 /* Description NOTE Carte Popularity*/
@@ -526,7 +526,7 @@ footer {
   display: flex;
   margin-top: 20px;
   background-color: #F2F2F2;
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 /* Hover liens Footer */
@@ -538,7 +538,7 @@ footer a:hover {
 footer div {
   display: block;
   width: 100%;
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 /* Gestion lien Footer */
@@ -665,7 +665,7 @@ main .search {
 
 /* Bouton Recherche */
 .search > button {
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
 }
 
 /* Input Gestion */
